@@ -1,0 +1,215 @@
+.title_top_bar {
+	background-image: url( CHM_common_source/title_top_bar.png );
+}
+
+.common_bottom {
+	background-image: url( CHM_common_source/common_bottom.png );
+	height: 32px;
+}
+
+.style_main {
+	text-align: left;
+}
+
+.style_main p {
+	margin-bottom: 1em;
+}
+
+.style_main img.pbl {
+	vertical-align: -7px;
+}
+
+.style_main .black_dot_para,.style_main .blue_dot_para,.style_main .blue_dot_large
+	{
+	background-color: transparent;
+	background-repeat: no-repeat;
+	padding-left: 1.3em;
+}
+
+.style_main .black_dot_para {
+	background-position: 0px 6px;
+	background-image: url( black_bullet.png );
+}
+
+.style_main .blue_dot_para {
+	background-position: 0px 7px;
+}
+
+.style_main .blue1 {
+	background-image: url( blue1_bullet.png );
+}
+
+.style_main .blue2 {
+	background-image: url( blue2_bullet.png );
+}
+
+.style_main .blue3 {
+	background-image: url( blue3_bullet.png );
+}
+
+.style_main .blue4 {
+	background-image: url( blue4_bullet.png );
+}
+
+.style_main .blue5 {
+	background-image: url( blue5_bullet.png );
+}
+
+.style_main .blue6 {
+	background-image: url( blue6_bullet.png );
+}
+
+.style_main .blue_dot_large {
+	background-position: 0px 0px;
+	padding-left: 35px;
+}
+
+.style_main .blue1L {
+	background-image: url( blue1_large.png );
+}
+
+.style_main .blue2L {
+	background-image: url( blue2_large.png );
+}
+
+.style_main .blue3L {
+	background-image: url( blue3_large.png );
+}
+
+.style_main .blue4L {
+	background-image: url( blue4_large.png );
+}
+
+.style_main table,.style_main .black_dot_para {
+	margin-bottom: 1em;
+}
+
+.style_main .blue_heading,.style_main .blue_heading2 {
+	line-height: normal;
+	width: 458px;
+	vertical-align: middle;
+	margin-bottom: 1em;
+	padding: 3px 10px;
+}
+
+.style_main .blue_heading {
+	background-image: url( blue_title_bkg.png );
+	height: 29px;
+}
+
+.style_main .blue_heading2 {
+	background-image: url( blue_title_bkg2.png );
+	height: 62px;
+	padding: 4px 10px;
+}
+
+.style_main .blue_heading,.style_main .black_dot_para,.style_main .style_heading_l,.style_main .blue_heading2,.style_main .blue_dot_para,.style_main .blue_dot_large
+	{
+	clear: both;
+}
+
+.style_main .bordered_section {
+	padding: 20px 15px;
+	margin-bottom: 1em;
+}
+
+.style_main .bordered_section ul {
+	padding-left: 15px;
+	list-style-position: outside;
+	list-style-type: disc;
+	margin: 0px;
+}
+
+.style_main .blue_border_top,.style_main .red_border_top,.style_main .blue_border_bottom,.style_main .red_border_bottom
+	{
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: top left;
+	height: 12px;
+	width: 478px;
+}
+
+.style_main .blue_border_top {
+	background-image: url( "blue_border_top.png" );
+}
+
+.style_main .red_border_top {
+	background-image: url( "red_border_top.png" );
+}
+
+.style_main .blue_border_main,.style_main .red_border_main {
+	width: 448px;
+	margin: 0px;
+	padding: 0px 13px;
+}
+
+.style_main .blue_border_main {
+	border-left: 2px solid rgb(67, 182, 223);
+	border-right: 2px solid rgb(67, 182, 223);
+}
+
+.style_main .red_border_main {
+	border-left: 2px solid red;
+	border-right: 2px solid red;
+}
+
+.style_main .blue_border_bottom,.style_main .red_border_bottom {
+	margin-bottom: 1em;
+}
+
+.style_main .blue_border_bottom {
+	background-image: url( "blue_border_bottom.png" );
+}
+
+.style_main .red_border_bottom {
+	background-image: url( "red_border_bottom.png" );
+}
+
+.style_main .blue_text {
+	color: rgb(67, 182, 223);
+}
+
+.style_main .red_text {
+	color: red;
+}
+
+.style_main table.grey_bordered {
+	clear: both;
+	width: 100%;
+	margin-top: 10px;
+}
+
+.style_main table.grey_bordered,.style_main table.grey_bordered td {
+	border: 2px solid #7E7E7E;
+}
+
+.style_main table.grey_bordered td {
+	padding: 10px;
+	vertical-align: middle;
+}
+
+.style_main table.grey_bordered td.no_left_border {
+	border-left: 0px none;
+	padding-left: 5px;
+}
+
+.style_main table.grey_bordered td.no_right_border {
+	border-right: 0px none;
+	padding-right: 5px;
+}
+
+.style_main img.btn {
+	vertical-align: -4px;
+}
+
+div .wii_caption,div .ds_caption {
+	color: rgb(67, 182, 223);
+	text-align: center;
+	margin-bottom: 0px;
+	width: 200px;
+	display: block;
+}
+
+div .ds_caption {
+	color: rgb(250, 94, 200);
+}

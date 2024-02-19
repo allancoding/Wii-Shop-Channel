@@ -1,0 +1,244 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta name="copyright" content=" (c) 2008 Nintendo - created by Artwork Services Department - Nintendo of Europe GmbH" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<!-- 
+    copyright Nintendo 2009
+
+	This website is powered by TYPO3 - inspiring people to share!
+	TYPO3 is a free open source Content Management Framework initially created by Kasper Skaarhoj and licensed under GNU/GPL.
+	TYPO3 is copyright 1998-2008 of Kasper Skaarhoj. Extensions are copyright of their respective owners.
+	Information and contribution at http://typo3.com/ and http://typo3.org/
+-->
+
+	
+	<link rel="stylesheet" type="text/css" href="/typo3temp/stylesheet_44f2ec0479.css" />
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<script type="text/javascript" language="JavaScript" src='../../../../../js/shop.js'></script>
+<script type="text/javascript" language="JavaScript" src='../../../../../js/sound.js'></script>
+<script type="text/javascript" language="JavaScript" src='../../../../../js/images.js'></script>
+<script type="text/javascript" language="JavaScript" src='../../../../../js/manual.js'></script>
+<script type="text/javascript" language="JavaScript" src='../../../../../js/input.js'></script>
+<link href="../common_data/cssfile.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript">
+function hideButton() {
+  if (document.getElementById("maintable") != undefined) {
+    var bodyHeight = document.getElementById("maintable").scrollHeight;
+    if (bodyHeight <= 456) {
+    	 var objBacklink = document.getElementById('backlink');
+    	 if (objBacklink.innerHTML != '') {
+    	 	var elem = document.getElementById("backlink");
+       	elem.innerHTML = '';
+    	 }
+    }
+  } 
+  
+}
+
+function getElementsByClassName(strClass, strTag, objContElm) {
+  strTag = strTag || "*";
+  objContElm = objContElm || document;
+  var objColl = objContElm.getElementsByTagName(strTag);
+  if (!objColl.length &&  strTag == "*" &&  objContElm.all) objColl = objContElm.all;
+  var arr = new Array();
+  var delim = strClass.indexOf('|') != -1  ? '|' : ' ';
+  var arrClass = strClass.split(delim);
+  for (var i = 0, j = objColl.length; i < j; i++) {
+    var arrObjClass = objColl[i].className.split(' ');
+    if (delim == ' ' && arrClass.length > arrObjClass.length) continue;
+    var c = 0;
+    comparisonLoop:
+    for (var k = 0, l = arrObjClass.length; k < l; k++) {
+      for (var m = 0, n = arrClass.length; m < n; m++) {
+        if (arrClass[m] == arrObjClass[k]) c++;
+        if (( delim == '|' && c == 1) || (delim == ' ' && c == arrClass.length)) {
+          arr.push(objColl[i]);
+          break comparisonLoop;
+        }
+      }
+    }
+  }
+  return arr;
+}
+
+
+
+function checkButtonText() {
+  var buttons = getElementsByClassName('contents','div',document);
+  for (i = 0;i < buttons.length; i++) {
+    if (buttons[i].offsetHeight > 30) {
+      buttons[i].setAttribute('class','contents2line',0);
+    }
+  }
+  for (i = 0;i < buttons.length; i++) {
+    if (buttons[i].offsetHeight < 35 && buttons[i].getAttribute('class') == 'contents2line') {
+      buttons[i].setAttribute('style','padding-top: 9px;',0);
+    }
+  }
+  
+}
+
+  </script>
+	<title>2. Zum sicheren Gebrauch</title>
+	
+	<script type="text/javascript" src="/typo3temp/javascript_93077bb238.js"></script>
+
+</head>
+<body onkeypress="kpress(false);" onload="initPage();MM_preloadImages(
+'../common_data/CHM_common_source_ro/button_back_ro_noe.png',
+'../common_data/CHM_common_source/button_back_noe.png',
+'../common_data/CHM_common_source_ro/button_next_ro_noe.png',
+'../common_data/CHM_common_source/button_next_noe.png',
+'../common_data/CHM_common_source_ro/button_index_ro_noe.png',
+'../common_data/CHM_common_source/button_index_noe.png',
+'../common_data/CHM_common_source_ro/button_index_top_ro_noe.png',
+'../common_data/CHM_common_source/button_index_top_noe.png');
+checkButtonText();hideButton();">
+
+<table width="100%" height="456" border="0" cellpadding="0" cellspacing="0" id="maintable">
+	<tr>
+		<td align="center" background="../common_data/CHM_common_source/title_top_bar.png">
+			<table width="608" height="79" border="0" cellpadding="0" cellspacing="0">
+				<tr>
+					<td width="90" id="bgpagenumb"><div class="style_number">2</div></td>
+					<td width="309"><span class="cms_style_title"><div class="style_title_m">Zum sicheren Gebrauch</div></span></td>
+					<td width="123"><a href="../index.html" target="_parent" onclick="wiiReturnSound()" onmouseover="wiiFocusSound()"><img src="../common_data/CHM_common_source/button_index_top_noe.png" alt="return_top" name="return_top" width="123" height="79" border="0" id="return_top" onmouseover="MM_swapImage('return_top','','../common_data/CHM_common_source_ro/button_index_top_ro_noe.png',1)" onmouseout="MM_swapImgRestore()" /></a></td>
+					<td width="79"></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td height="285" align="center" valign="top">
+			<table width="530" border="0" cellpadding="0" cellspacing="0">
+				<tr align="center">
+				    <td width="478" valign="top" class="frame_margin"><div id="contentContainer">
+	<!--  CONTENT ELEMENT, uid:35771/shortcut [begin] -->
+		<div class="style_main"> <a id="c35771"></a>
+		<!--  Inclusion of other records (by reference): [begin] -->
+			
+	<!--  CONTENT ELEMENT, uid:897/html [begin] -->
+		<div class="style_main"> <a id="c897"></a>
+		<!--  Raw HTML content: [begin] -->
+			<table width="478" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr>
+            <td width="37" valign="top"><img src="../common_data/CHM_common_source/warning_mark.png" width="37" height="32" /></td>
+            <td width="431" valign="top" class="style_warning"><strong>Sicherer Gebrauch der <nobr>Wii-Fernbedienung</nobr></strong></td>
+          </tr>
+        </table>
+      <div class="style_main" style="margin-top:10px">
+         <ol>
+    <li class="numb1"><strong>Trage die Handgelenksschlaufe!</strong><br />
+Vergewissere dich, dass bei jedem Spieler sowohl die Handgelenksschlaufe (RVL-018 oder RVL-018A) als auch der Stopper fest und sicher angelegt sind. Wenn mehrere Spieler abwechselnd mit derselben Wii-Fernbedienung spielen, muss jeder Spieler die Handgelenksschlaufe beim Spielen korrekt verwenden. Die Verwendung der Handgelenksschlaufe verhindert unbeabsichtigtes Werfen oder Fallenlassen der Wii-Fernbedienung, falls diese während des Spielens aus Versehen losgelassen wird.</li>
+		  <div align="center"><img src="02_01.png" class="spacer10t" style="margin-bottom:10px" />		  </div>
+          <div align="center"><img src="02_02.png" class="spacer10t" style="margin-bottom:10px" />		  </div>
+    <li class="numb2"><strong>Halte die  Wii-Fernbedienung fest in der Hand und lasse sie nicht los!<br />
+    </strong>Lasse während des Spielens die <nobr>Wii-Fernbedienung</nobr> nicht los, selbst wenn du  die Handgelenksschlaufe verwendest, und bewege dich beim Spielen nicht mehr als  nötig. Spielst du zum Beispiel Bowling in Wii <span style="font-variant:small-caps"> Sports</span>&trade;, dann musst du zum Loslassen der Kugel im Spiel nur <img src="../common_data/CHM_common_source/btn_large_b.png" align="absmiddle"> auf der Wii-Fernbedienung loslassen – <strong>LASSE AUF KEINEN FALL DIE Wii-FERNBEDIENUNG SELBST LOS</strong>. Solltest du beim Spielen feuchte Hände bekommen, unterbrich das Spielen unbedingt und trockne deine Hände und die Wii-Fernbedienung ab. Übermäßige Bewegungen und ein Loslassen der Wii-Fernbedienung könnten die Handgelenksschlaufe beschädigen. Sollte dir die Wii-Fernbedienung entgleiten, könnte dies zu Verletzungen von in der Nähe stehenden Personen oder zu Schäden an nahegelegenen Objekten führen.
+    </li>
+    </ol>
+
+      </div>
+		<div class="spacer10tu">
+        <p class="style_main"><strong>Weitere  Informationen zum Gebrauch der Handgelenksschlaufe</strong></p>
+        </div>
+		<div class="spacer10tu">
+        <p class="style_main">Der Spielablauf mit der Wii-Fernbedienung kann schnelle und dynamische Bewegungsabläufe mit sich bringen. Bitte verwende stets die Handgelenksschlaufe, um das Risiko zu verringern, dass dir die Wii-Fernbedienung beim Spielen aus der Hand gleitet und dadurch Schäden an der Umgebung sowie der Wii-Fernbedienung entstehen oder andere Personen verletzt werden.<br />
+Weitere Informationen zum sicheren Gebrauch der Handgelenksschlaufe findest du in der Wii-Bedienungsanleitung – Vorbereitung des Systems unter &bdquo;5. Gebrauch der Wii-Fernbedienung&rdquo;.</p>
+        </div>
+		<!--  Raw HTML content: [end] -->
+			</div>
+	<!--  CONTENT ELEMENT, uid:897/html [end] -->
+		
+	<!--  CONTENT ELEMENT, uid:907/html [begin] -->
+		<div class="style_main"> <a id="c907"></a>
+		<!--  Raw HTML content: [begin] -->
+			<table width="478" border="0" align="center" cellpadding="0" cellspacing="0" class="spacer10tu">
+          <tr>
+            <td width="37" valign="top"><img src="../common_data/CHM_common_source/warning_mark.png" width="37" height="32" /></td>
+            <td width="431" valign="top" class="style_warning"><strong>Hinweise zum Spielbereich</strong>
+</td>
+          </tr>
+        </table>
+      <div class="style_main">
+         <p class="style_main"><strong>Sorge für  ausreichend Platz zum Spielen! </strong>Während des Spielens mit  der Wii-Fernbedienung wirst du möglicherweise Platz zum Bewegen benötigen.  Stelle sicher, dass sich in deinem Bewegungsumfeld weder andere Personen noch  Gegenstände oder Möbel befinden, um ein Aneinanderstoßen zu vermeiden. Beachte bitte  auch den empfohlenen Mindestabstand von einem Meter zum Fernseher.</p>
+      </div>
+		 </div>
+		 <div class="style_main">
+		 <p align="center"><img src="02_05_noe.png" class="spacer10t" style="margin-bottom:10px" /></p>
+		 <p align="center"><img src="02_06.png" class="spacer10t" style="margin-bottom:10px" /></p>
+		 </div>
+	   <div class="style_main">
+         <p>Diese Informationen kannst du auch unter <nobr>www.nintendo.com/healthsafety</nobr> nachlesen.</p>
+		 </div>
+         
+         <!-- accessory begin -->
+         
+<!-- accessory end -->
+		 
+		 		<table width="478" border="0" align="center" cellpadding="0" cellspacing="0" class="spacer10tu">
+          <tr>
+            <td width="37" valign="top"><img src="../common_data/CHM_common_source/warning_mark.png" width="37" height="32" /></td>
+            <td width="431" valign="top" class="style_warning"><strong>60Hz (480i)-Modus</strong></td>
+	         </tr>
+        </table>
+      <div class="style_main">
+	  <div style="float:right; clear:both; padding-left: 10px;">
+	  <img src="../common_data/CHM_common_source/50_60Hz_icon.png"/>	  </div>
+         <p class="style_main">Vielen ist der Unterschied zwischen dem 50Hz- und dem 60Hz-Modus nicht bekannt. Da die meisten neueren Fernsehgeräte den 60Hz-Modus unterstützen, lohnt es sich  herauszufinden, ob dein Fernseher kompatibel ist. Vereinfacht gesagt bezieht  sich der Begriff Hz (Hertz) auf die Anzahl der Bilder, die pro Sekunde auf dem  Bildschirm dargestellt werden.</p>
+	          <p class="style_main" style="margin-top:10px">50Hz stellt 25 Bilder pro Sekunde dar, wohingegen  60Hz annähernd 30 Bilder pro Sekunde darstellt. Dies klingt nicht nach einem  gravierenden Unterschied, allerdings ist die Qualitätsverbesserung auf dem  Bildschirm eindeutig zu sehen. Die 60Hz (480i)-Darstellung bietet Spielern eine  qualitativ hochwertigere Bilddarstellung. Besondere Merkmale sind die sanftere  Bildwiedergabe mit reduziertem Flimmern und eine optimale Spielgeschwindigkeit,  die zu einer großartigen Spielerfahrung beitragen.</p>
+			  <p class="style_main" style="margin-top:10px">Standardmäßig ist der 50Hz (576i)-Modus ausgewählt. Um den 60Hz (480i)-Modus zu aktivieren, wähle diesen Modus bitte in den  Wii-Systemeinstellungen unter FERNSEHER aus. Manche, in erster Linie ältere,  Fernsehgeräte können jedoch keine Spiele im 60Hz (480i)-Modus darstellen. Daher kann es bei einem kleinen  Prozentsatz der Spieler zu Schwierigkeiten bei der Darstellung dieses Spiels  auf ihren Fernsehgeräten kommen. Um herauszufinden, ob dein Fernsehgerät den 60Hz (480i)-Modus darstellen kann,  schlage bitte in der zugehörigen Bedienungsanleitung nach oder wende dich an  den zuständigen Hersteller.</p>
+			  <p class="style_main" style="margin-top:10px">Sollte nach dem Wechsel zum 60Hz (480i)-Modus der Bildschirm schwarz bleiben oder ein  verzerrtes Bild darstellen, ist es wahrscheinlich, dass dein Fernseher den 60Hz (480i)-Modus nicht unterstützt.  Wenn du den RESET-Knopf der Wii-Konsole betätigst, während du unten auf dem  Steuerkreuz gedrückt hältst, startet das Wii-System im 50Hz (576i)-Modus neu. Weitere Informationen zur Einstellung des Darstellungsmodus erhältst du in der  Wii-Bedienungsanleitung – Kanäle und Einstellungen.</p>
+			  <p class="style_main" style="margin-top:10px">Wenn du zum Anschluss ein Wii-RGB-Kabel (RVL-013) (separat erhältlich) verwendest und das Fernsehgerät über einen RGB-Eingang und  eine PAL60-Kompatibilität verfügt, oder wenn du zum Anschluss ein  Wii-Komponenten-Video-Kabel (RVL-011) (separat erhältlich) verwendest und das Fernsehgerät über einen Komponenten-Eingang verfügt, erfolgt eine wesentlich schärfere Bildwiedergabe.</p>
+		 </div>
+	 		<table width="478" border="0" align="center" cellpadding="0" cellspacing="0" class="spacer10tu">
+          <tr>
+            <td width="37" valign="top"><img src="../common_data/CHM_common_source/warning_mark.png" width="37" height="32" /></td>
+            <td width="431" valign="top" class="style_warning"><strong>EDTV/HDTV (480p)-Modus<br />
+            Progressive Scan
+</strong></td>
+          </tr>
+        </table>
+      <div class="style_main">
+	  	  <div style="float:right; clear:both; padding-left: 10px;">
+	  <img src="../common_data/CHM_common_source/progressiv_mode.png"/>	  </div>
+         <p class="style_main">Die EDTV/HDTV (480p)-Darstellung erfolgt progressiv und bietet Spielern die qualitativ hochwertigste Bilddarstellung. Besondere Merkmale sind die gestochen scharfe Bildwiedergabe und eine optimale Spielgeschwindigkeit mit stark reduziertem Flimmern, die zu einer großartigen Spielerfahrung beitragen. Wir von Nintendo® möchten, dass die Spieler unsere Spiele unter den bestmöglichen Bedingungen erleben.</p>
+	          <p class="style_main" style="margin-top:10px">Abhängig von der Kombination des verwendeten Kabels  und des Fernsehgerätes kann es jedoch sein, dass dieser Modus nicht dargestellt  werden kann. Schlage bitte in der zugehörigen Bedienungsanleitung nach oder  wende dich an den Hersteller, um zu erfahren, ob dein Fernsehgerät über die  erforderliche Progressive Scan-Technik verfügt. Stelle außerdem sicher, das  Wii-Komponenten-Video-Kabel (RVL-011) (separat erhältlich) zu verwenden und  Progressive Scan am Fernsehgerät zu aktivieren, wenn du diesen Modus auswählst.</p>
+			  <p class="style_main" style="margin-top:10px">Standardmäßig ist der 50Hz (576i)-Modus ausgewählt. Um den EDTV/HDTV (480p)-Modus zu aktivieren, wähle diesen Modus bitte in  den Wii-Systemeinstellungen unter FERNSEHER aus. Weitere Informationen zur  Einstellung des Darstellungsmodus erhältst du in der Wii-Bedienungsanleitung – Kanäle und Einstellungen.</p>
+		 </div>
+		<!--  Raw HTML content: [end] -->
+			</div>
+	<!--  CONTENT ELEMENT, uid:907/html [end] -->
+		
+		<!--  Inclusion of other records (by reference): [end] -->
+			</div>
+	<!--  CONTENT ELEMENT, uid:35771/shortcut [end] -->
+		</div></td>
+				    <td width="52" valign="top"></td>
+				  </tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td height="60" align="center">
+			<table width="550" border="0" align="center" cellpadding="0" cellspacing="0">
+				<tr>
+					<td width="152" align="left" id="prev"><a href="../page_01/page_01.html" onfocus="blurLink(this);"  target="_parent" onclick="wiiReturnSound()" onmouseover="wiiFocusSound()"><img src="../common_data/CHM_common_source/button_back_noe.png" alt="back" name="foot_back" width="152" height="54" vspace="3" border="0" id="foot_back" onmouseover="MM_swapImage('foot_back','','../common_data/CHM_common_source_ro/button_back_ro_noe.png',1)" onmouseout="MM_swapImgRestore()" /></a></td>
+					<td width="196" align="center" id="backlink"><a onmouseover="wiiFocusSound()" onclick="wiiReturnSound()" target="_parent" href="../index.html" ><img src="../common_data/CHM_common_source/button_index_noe.png" alt="return" name="return_index" width="152" height="54" vspace="3" border="0" id="return_index" onmouseover="MM_swapImage('return_index','','../common_data/CHM_common_source_ro/button_index_ro_noe.png',1)" onmouseout="MM_swapImgRestore()" /></a></td>
+					<td width="152" align="right" id="next"><a href="../page_03/page_03.html" onfocus="blurLink(this);"  target="_parent" onclick="wiiReturnSound()" onmouseover="wiiFocusSound()"><img src="../common_data/CHM_common_source/button_next_noe.png" alt="next" name="foot_next" width="152" height="54" vspace="3" border="0" id="foot_next" onmouseover="MM_swapImage('foot_next','','../common_data/CHM_common_source_ro/button_next_ro_noe.png',1)" onmouseout="MM_swapImgRestore()" /></a></td>
+					<td width="50"></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td height="32" background="../common_data/CHM_common_source/common_bottom.png"></td>
+	</tr>
+</table>
+
+</body>
+</html>
+<!-- Parsetime: 640 ms-->

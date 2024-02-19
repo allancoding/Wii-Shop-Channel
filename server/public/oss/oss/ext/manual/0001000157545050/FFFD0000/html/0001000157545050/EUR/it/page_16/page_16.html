@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>16. Giocatore singolo</title>
+<script type="text/javascript" language="JavaScript" src='../../../../../js/shop.js'></script>
+<script type="text/javascript" language="JavaScript" src='../../../../../js/sound.js'></script>
+<script type="text/javascript" language="JavaScript" src='../../../../../js/images.js'></script>
+<script type="text/javascript" language="JavaScript" src='../../../../../js/manual.js'></script>
+<script type="text/javascript" language="JavaScript" src='../../../../../js/input.js'></script>
+<link href="../common_data/cssfile.css" rel="stylesheet" type="text/css" />
+</head>
+<body onkeypress="kpress(false);" onload="initPage(); MM_preloadImages(
+'../common_data/CHM_common_source_ro/button_back_ro_ita.png',
+'../common_data/CHM_common_source_ro/button_next_ro_ita.png',
+'../common_data/CHM_common_source_ro/button_index_ro_ita.png',
+'../common_data/CHM_common_source_ro/button_index_top_ro_ita.png')">
+<table width="100%" height="456" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td align="center" background="../common_data/CHM_common_source/title_top_bar.png"><table width="608" height="79" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td width="90" id="bgpagenumb"><div class="style_namber2k">16</div></td>
+<td width="309"><div class="style_title">Giocatore singolo</div></td>
+<td width="123"><a href="../index.html" target="_parent" onclick="wiiReturnSound()" onmouseover="wiiFocusSound()"><img src="../common_data/CHM_common_source/button_index_top_ita.png" alt="return_top" name="return_top" width="123" height="79" border="0" id="return_top" onmouseover="MM_swapImage('return_top','','../common_data/CHM_common_source_ro/button_index_top_ro_ita.png',1)" onmouseout="MM_swapImgRestore()" /></a></td>
+<td width="79"></td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<td height="285" align="center" valign="top"><table width="530" border="0" cellpadding="0" cellspacing="0">
+<tr align="center">
+<td width="478" valign="top" class="frame_margin">
+
+<table width="478" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#43B6DF" >
+<tr>
+<td width="5" valign="top"><img src="../common_data/CHM_common_source/heading_tl.png" width="5" height="5" /></td>
+<td></td>
+<td width="5" valign="top"><img src="../common_data/CHM_common_source/heading_tr.png" width="5" height="5" /></td>
+</tr>
+<tr>
+<td valign="top"></td>
+<td width="468" valign="top" class="style_bar">Maratona</td>
+<td valign="top"></td>
+<tr>
+<td valign="top"><img src="../common_data/CHM_common_source/heading_bl.png" width="5" height="5" /></td>
+<td valign="top"></td>
+<td valign="top"><img src="../common_data/CHM_common_source/heading_br.png" width="5" height="5" /></td>
+</tr>
+</table>
+
+<div class="style_main spacer10t">
+<img src="hitoride_01_us.png" width="207" height="163" style="margin:0 0 0 10px;float:right;" />Si gioca con le regole classiche di Tetris.<br />
+Sovrapponi i tetramini man mano che vengono visualizzati ed eliminali.<br /> 
+<span style="letter-spacing:-1px;">La partita si conclude quando</span> i blocchi si accumulano fino in cima al campo di gioco dove vengono visualizzati i tetramini. <br />
+Se infinito è su OFF, punta al punteggio migliore eliminando 150 righe nel tempo più breve. <br />
+Se è ON, punta a un punteggio alto giocando il più a lungo possibile.</div>
+
+<table width="478" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#43B6DF" class="spacer30t">
+<tr>
+<td width="5" valign="top"><img src="../common_data/CHM_common_source/heading_tl.png" width="5" height="5" /></td>
+<td></td>
+<td width="5" valign="top"><img src="../common_data/CHM_common_source/heading_tr.png" width="5" height="5" /></td>
+</tr>
+<tr>
+<td valign="top"></td>
+<td width="468" valign="top" class="style_bar">Sfida col computer</td>
+<td valign="top"></td>
+<tr>
+<td valign="top"><img src="../common_data/CHM_common_source/heading_bl.png" width="5" height="5" /></td>
+<td valign="top"></td>
+<td valign="top"><img src="../common_data/CHM_common_source/heading_br.png" width="5" height="5" /></td>
+</tr>
+</table>
+
+<div class="style_main spacer10t">
+<img src="hitoride_02_us.png" width="207" height="163" style="margin:0 0 0 10px;float:right;" />
+Si gioca con le regole classiche di Tetris.<br />
+Sfida il computer cercando di eliminare le righe. <br />
+Vince chi per primo riesce a bloccare l'avversario in una situazione di stallo (game over). Elimina le righe per inviare blocchi di penalità nel campo di <span style="letter-spacing:-1px;">gioco dell'avversario.</span> Vi sono 15 giocatori computer (liv. da 1 a 15) e le vittorie e le sconfitte contro ciascuno di essi sono registrate singolarmente nei Record personali.</div>
+
+<table width="478" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#43B6DF" class="spacer30t">
+<tr>
+<td width="5" valign="top"><img src="../common_data/CHM_common_source/heading_tl.png" width="5" height="5" /></td>
+<td></td>
+<td width="5" valign="top"><img src="../common_data/CHM_common_source/heading_tr.png" width="5" height="5" /></td>
+</tr>
+<tr>
+<td valign="top"></td>
+<td width="468" valign="top" class="style_bar">Scalatore</td>
+<td valign="top"></td>
+<tr>
+<td valign="top"><img src="../common_data/CHM_common_source/heading_bl.png" width="5" height="5" /></td>
+<td valign="top"></td>
+<td valign="top"><img src="../common_data/CHM_common_source/heading_br.png" width="5" height="5" /></td>
+</tr>
+</table>
+
+<div class="style_main spacer10t">
+<img src="hitoride_03_us.png" width="207" height="163" style="margin:0 0 0 10px;float:right;" />Punta al punteggio più alto aiutando lo scalatore a raggiungere la meta nella parte superiore del campo di gioco. Il climber sale automaticamente un gradino salendo di un blocco. Guida lo scalatore formando dei gradini con i tetramini. Accertati di non trascurare nessuna bandiera dei checkpoint lungo il percorso.<br /> 
+<span style="letter-spacing:-1px;">I punti dipen</span>dono dal tempo complessivo raggiunto per 10 stage di gioco. Ottieni un Calcia linea per ogni passaggio a un checkpoint.</div>
+
+<table width="478" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#43B6DF" class="spacer30t">
+<tr>
+<td width="5" valign="top"><img src="../common_data/CHM_common_source/heading_tl.png" width="5" height="5" /></td>
+<td></td>
+<td width="5" valign="top"><img src="../common_data/CHM_common_source/heading_tr.png" width="5" height="5" /></td>
+</tr>
+<tr>
+<td valign="top"></td>
+<td width="468" valign="top" class="style_bar">Ombra</td>
+<td valign="top"></td>
+<tr>
+<td valign="top"><img src="../common_data/CHM_common_source/heading_bl.png" width="5" height="5" /></td>
+<td valign="top"></td>
+<td valign="top"><img src="../common_data/CHM_common_source/heading_br.png" width="5" height="5" /></td>
+</tr>
+</table>
+
+<div class="style_main spacer10t">
+<img src="hitoride_04_us.png" width="207" height="163" style="margin:0 0 0 10px;float:right;" />Posiziona i tetramini riempiendo l'ombra nel campo di gioco e crea la <span style="letter-spacing:-1px;">forma indicata. La </span>velocità di completamento non conta:<br /> 
+devi solo riempire tutta l'ombra per completare lo stage. Punta al tempo migliore e al migliore livello di completamento di ogni stage per ottenere il punteggio più alto.<br />
+Hai solo 3 minuti per completare ogni livello.</div>
+
+<table width="478" border="0" align="center" cellpadding="0" cellspacing="0" class="spacer20t">
+<tr>
+<td width="12" height="12"><img src="../common_data/CHM_common_source/kadomaru_ul_gray.png" width="12" height="12" /></td>
+<td width="454" height="12"><img src="../common_data/CHM_common_source/kadomaru_line_u_gray.png" width="454" height="12" /></td>
+<td width="12" height="12"><img src="../common_data/CHM_common_source/kadomaru_ur_gray.png" width="12" height="12" /></td>
+</tr>
+<tr>
+<td width="12" background="../common_data/CHM_common_source/kadomaru_line_l_gray.png"><img src="../common_data/CHM_common_source/kadomaru_line_l.png" width="12" height="1" /></td>
+<td>
+
+<div class="style_main_s">
+<img src="tetris_skip_1.png" width="101" height="87" align="left" style=" margin-right:10px;"/>
+<p class="caution_s1">
+<strong>&nbsp;&nbsp; Visualizzazione SALTO</strong></p>
+<p class="spacer5t">
+<span style="letter-spacing:-1px;">Indica il numero di </span>volte in cui puoi saltare un tetramino e visualizzarne un altro.</p>
+</div></td>
+<td width="12" background="../common_data/CHM_common_source/kadomaru_line_r_gray.png"><img src="../common_data/CHM_common_source/kadomaru_line_r.png" width="12" height="1" /></td>
+</tr>
+<tr>
+<td width="12" height="12"><img src="../common_data/CHM_common_source/kadomaru_dl_gray.png" width="12" height="12" /></td>
+<td width="454" height="12"><img src="../common_data/CHM_common_source/kadomaru_line_d_gray.png" width="454" height="12" /></td>
+<td width="12" height="12"><img src="../common_data/CHM_common_source/kadomaru_dr_gray.png" width="12" height="12" /></td>
+</tr>
+</table>
+
+<table width="478" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#43B6DF" class="spacer30t">
+<tr>
+<td width="5" valign="top"><img src="../common_data/CHM_common_source/heading_tl.png" width="5" height="5" /></td>
+<td></td>
+<td width="5" valign="top"><img src="../common_data/CHM_common_source/heading_tr.png" width="5" height="5" /></td>
+</tr>
+<tr>
+<td valign="top"></td>
+<td width="468" valign="top" class="style_bar">Corridore</td>
+<td valign="top"></td>
+<tr>
+<td valign="top"><img src="../common_data/CHM_common_source/heading_bl.png" width="5" height="5" /></td>
+<td valign="top"></td>
+<td valign="top"><img src="../common_data/CHM_common_source/heading_br.png" width="5" height="5" /></td>
+</tr>
+</table>
+
+<div class="style_main spacer10t"><img src="hitoride_05_us.png" width="207" height="163" style="margin:0 0 0 10px;float:right;" /><span style="letter-spacing:-1px;">Guida un tetramino</span> in caduta in un campo di scorrimento <span style="letter-spacing:-1px;">obblig</span>ato fino a raggiungere la meta, che si trova 400 righe più in basso.<br />
+  La partita termina se il percorso del tetramino è interrotto da un blocco <span style="letter-spacing:-1px;">penalità o da un'</span>altra ostruzione e finisce fuori dalla <span style="letter-spacing:-1px;">schermata. Il più veloce a ragg</span>iungere la meta ottiene un punteggio elevato.</div></td>
+<td width="52" valign="top"></td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<td height="60" align="center"><table width="550" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td width="152" align="left"><a href="../page_15/page_15.html" target="_parent" onclick="wiiLeftScroll()" onmouseover="wiiFocusSound()"><img src="../common_data/CHM_common_source/button_back_ita.png" alt="back" name="foot_back" width="152" height="54" vspace="3" border="0" id="foot_back" onmouseover="MM_swapImage('foot_back','','../common_data/CHM_common_source_ro/button_back_ro_ita.png',1)" onmouseout="MM_swapImgRestore()" /></a></td>
+<td width="196" align="center"><a href="../index.html" target="_parent" onclick="wiiReturnSound()" onmouseover="wiiFocusSound()"><img src="../common_data/CHM_common_source/button_index_ita.png" alt="return" name="return_index" width="152" height="54" vspace="3" border="0" id="return_index" onmouseover="MM_swapImage('return_index','','../common_data/CHM_common_source_ro/button_index_ro_ita.png',1)" onmouseout="MM_swapImgRestore()" /></a></td>
+<td width="152" align="right"><a href="../page_17/page_17.html" target="_parent" onclick="wiiRightScroll()" onmouseover="wiiFocusSound()"><img src="../common_data/CHM_common_source/button_next_ita.png" alt="next" name="foot_next" width="152" height="54" vspace="3" border="0" id="foot_next" onmouseover="MM_swapImage('foot_next','','../common_data/CHM_common_source_ro/button_next_ro_ita.png',1)" onmouseout="MM_swapImgRestore()" /></a></td>
+<td width="50"></td>
+</tr>
+</table></td></tr>
+<tr>
+<td height="32" background="../common_data/CHM_common_source/common_bottom.png"></td>
+</tr>
+</table>
+</body>
+</html>

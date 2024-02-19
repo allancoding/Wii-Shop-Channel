@@ -1,0 +1,191 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>14. Interfaccia Gioco</title>
+<script type="text/javascript" language="JavaScript" src='../../../../../js/shop.js'></script>
+<script type="text/javascript" language="JavaScript" src='../../../../../js/sound.js'></script>
+<script type="text/javascript" language="JavaScript" src='../../../../../js/images.js'></script>
+<script type="text/javascript" language="JavaScript" src='../../../../../js/manual.js'></script>
+<script type="text/javascript" language="JavaScript" src='../../../../../js/input.js'></script>
+<link href="../common_data/cssfile.css" rel="stylesheet" type="text/css" />
+</head>
+<body onkeypress="kpress(false);" onload="initPage(); MM_preloadImages(
+	'../common_data/CHM_common_source_ro/button_back_ro_ita.png',
+	'../common_data/CHM_common_source_ro/button_next_ro_ita.png',
+	'../common_data/CHM_common_source_ro/button_index_ro_ita.png',
+	'../common_data/CHM_common_source_ro/button_index_top_ro_ita.png',
+	'ph_14_01.png', 'ph_14_02.png', 'ph_14_03.png', 'ph_14_04.png', 'ph_14_05.png', 'ph_14_06.png', 'ph_14_07.png', 'ph_14_08.png')">
+<table width="100%" height="456" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td align="center" background="../common_data/CHM_common_source/title_top_bar.png"><table width="608" height="79" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td width="90" id="bgpagenumb"><div class="style_namber2k">14</div></td>
+<td width="309"><div class="style_title">Interfaccia Gioco</div></td>
+<td width="123"><a href="../index.html" target="_parent" onclick="wiiReturnSound()" onmouseover="wiiFocusSound()"><img src="../common_data/CHM_common_source/button_index_top_ita.png" alt="return_top" name="return_top" width="123" height="79" border="0" id="return_top" onmouseover="MM_swapImage('return_top','','../common_data/CHM_common_source_ro/button_index_top_ro_ita.png',1)" onmouseout="MM_swapImgRestore()" /></a></td>
+<td width="79"></td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<td height="285" align="center" valign="top"><table width="530" border="0" cellpadding="0" cellspacing="0">
+  <tr align="center">
+    <td width="478" height="1017" valign="top" class="frame_margin"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="100%" align="right" class="style_main"><img src="ph_14_01.png" width="478" height="370" /></td>
+          </tr>
+          <tr>
+            <td align="right" class="style_main">&nbsp;</td>
+          </tr>
+        </table></td>
+      </tr>
+      
+      <tr>
+        <td valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td height="11" colspan="2" align="center" class="style_main"><p align="center">Cursore</p>                </td>
+          </tr>
+          <tr>
+            <td height="11" colspan="2" align="center" class="style_main"><div align="center"><img src="ph_14_02.png" width="104" height="115" /></div></td>
+          </tr>
+          <tr>
+            <td height="5" colspan="2" align="right" class="style_main"><p>La mano mostrata sullo schermo è il tuo cursore ed indica dove stai puntando il telecomando Wii. Il numero mostrato si riferisce al giocatore a cui il cursore è associato (da Giocatore 1 a Giocatore 4). <br />
+              <br />
+                  <span class="style_main">Attenzione! Nel “Light quiz” il cursore diventerà un anello colorato:</span></p>              </td>
+          </tr>
+          <tr>
+            <td height="10" colspan="2" align="right" class="style_main"></td>
+          </tr>
+          <tr>
+            <td height="11" align="right" class="style_main">*Arancio per il Giocatore 1</td>
+          </tr>
+	  <tr>
+            <td height="11" align="right" class="style_main">*Blu per il Giocatore 2</td>
+	  </tr>
+          <tr>
+            <td height="11" align="right" class="style_main">*Verde per il Giocatore 3</td>
+          </tr>
+          <tr> 
+            <td height="11" align="right" class="style_main">*Rosa per il Giocatore 4</td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td height="11" align="center" class="style_main"><p align="center">Tempo</p></td>
+          </tr>
+          <tr>
+            <td height="11" align="center" class="style_main"><div align="center"><img src="ph_14_03.png" width="138" height="142" /></div></td>
+          </tr>
+          <tr>
+            <td height="22" align="right" class="style_main"><p>Questa icona rappresenta il tempo a disposizione per rispondere alla domanda. </p></td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td height="11" align="center" class="style_main"><p align="center">Categoria del Quiz</p></td>
+          </tr>
+          <tr>
+            <td height="11" align="center" class="style_main"><div align="center"><img src="ph_14_04.png" width="276" height="110" /></div></td>
+          </tr>
+          <tr>
+            <td height="22" align="right" class="style_main"><p>Qui è mostrata la categoria a cui appartiene la domanda.</p></td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td height="11" align="center" class="style_main"><p align="center">Denaro</p></td>
+          </tr>
+          <tr>
+            <td height="11" align="center" class="style_main"><div align="center"><img src="ph_14_05.png" width="276" height="102" /></div></td>
+          </tr>
+          <tr>
+            <td height="22" align="right" class="style_main"><p>Qui è mostrato il totale in denaro che potrai vincere rispondendo per primo ed in maniera corretta alla domanda. </p></td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td height="11" align="center" class="style_main"><p align="center">Domanda</p></td>
+          </tr>
+          <tr>
+            <td height="11" align="center" class="style_main"><div align="center"><img src="ph_14_06.png" width="478" height="88" /></div></td>
+          </tr>
+          <tr>
+            <td height="22" align="right" class="style_main"><p>Qui è mostrata la domanda a cui dovrai rispondere.</p></td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td height="11" align="center" class="style_main"><p align="center">Numero di domande già superate</p></td>
+          </tr>
+          <tr>
+            <td height="11" align="center" class="style_main"><div align="center"><img src="ph_14_07.png" width="244" height="94" /></div></td>
+          </tr>
+          <tr>
+            <td height="22" align="right" class="style_main"><p>Qui è indicato il numero di domande a cui hai già risposto, con un massimo di 7 domande per quiz.</p></td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td height="11" align="center" class="style_main"><p align="center">Possibili risposte</p></td>
+          </tr>
+          <tr>
+            <td height="11" align="center" class="style_main"><div align="center"><img src="ph_14_08.png" width="471" height="154" /></div></td>
+          </tr>
+          <tr>
+            <td height="22" align="right" class="style_main"><p>Nella modalità “Classic Quiz” potrai scegliere la risposta giusta tra 4 possibilità. </p></td>
+          </tr>
+        </table></td>
+      </tr>
+      
+    </table></td>
+    <td width="52" valign="top"></td>
+  </tr>
+</table></td>
+</tr>
+<tr>
+<td height="60" align="center"><table width="550" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td width="152" align="left"><a href="../page_13/page_13.html" target="_parent" onclick="wiiLeftScroll()" onmouseover="wiiFocusSound()"><img src="../common_data/CHM_common_source/button_back_ita.png" alt="back" name="foot_back" width="152" height="54" vspace="3" border="0" id="foot_back" onmouseover="MM_swapImage('foot_back','','../common_data/CHM_common_source_ro/button_back_ro_ita.png',1)" onmouseout="MM_swapImgRestore()" /></a></td>
+<td width="196" align="center"><a href="../index.html" target="_parent" onclick="wiiReturnSound()" onmouseover="wiiFocusSound()"><img src="../common_data/CHM_common_source/button_index_ita.png" alt="return" name="return_index" width="152" height="54" vspace="3" border="0" id="return_index" onmouseover="MM_swapImage('return_index','','../common_data/CHM_common_source_ro/button_index_ro_ita.png',1)" onmouseout="MM_swapImgRestore()" /></a></td>
+<td width="152" align="right"><a href="../page_15/page_15.html" target="_parent" onclick="wiiRightScroll()" onmouseover="wiiFocusSound()"><img src="../common_data/CHM_common_source/button_next_ita.png" alt="next" name="foot_next" width="152" height="54" vspace="3" border="0" id="foot_next" onmouseover="MM_swapImage('foot_next','','../common_data/CHM_common_source_ro/button_next_ro_ita.png',1)" onmouseout="MM_swapImgRestore()" /></a></td>
+<td width="50"></td>
+</tr>
+</table></td></tr>
+<tr>
+<td height="32" background="../common_data/CHM_common_source/common_bottom.png"></td>
+</tr>
+</table>
+</body>
+</html>

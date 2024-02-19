@@ -1,0 +1,304 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta name="copyright" content=" (c) 2008 Nintendo - created by Artwork Services Department - Nintendo of Europe GmbH" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<!-- 
+    copyright Nintendo 2009
+
+	This website is powered by TYPO3 - inspiring people to share!
+	TYPO3 is a free open source Content Management Framework initially created by Kasper Skaarhoj and licensed under GNU/GPL.
+	TYPO3 is copyright 1998-2008 of Kasper Skaarhoj. Extensions are copyright of their respective owners.
+	Information and contribution at http://typo3.com/ and http://typo3.org/
+-->
+
+	
+	<link rel="stylesheet" type="text/css" href="/typo3temp/stylesheet_44f2ec0479.css" />
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<script type="text/javascript" language="JavaScript" src='../../../../../js/shop.js'></script>
+<script type="text/javascript" language="JavaScript" src='../../../../../js/sound.js'></script>
+<script type="text/javascript" language="JavaScript" src='../../../../../js/images.js'></script>
+<script type="text/javascript" language="JavaScript" src='../../../../../js/manual.js'></script>
+<script type="text/javascript" language="JavaScript" src='../../../../../js/input.js'></script>
+<link href="../common_data/cssfile.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript">
+function hideButton() {
+  if (document.getElementById("maintable") != undefined) {
+    var bodyHeight = document.getElementById("maintable").scrollHeight;
+    if (bodyHeight <= 456) {
+    	 var objBacklink = document.getElementById('backlink');
+    	 if (objBacklink.innerHTML != '') {
+    	 	var elem = document.getElementById("backlink");
+       	elem.innerHTML = '';
+    	 }
+    }
+  }
+
+}
+
+function getElementsByClassName(strClass, strTag, objContElm) {
+  strTag = strTag || "*";
+  objContElm = objContElm || document;
+  var objColl = objContElm.getElementsByTagName(strTag);
+  if (!objColl.length &&  strTag == "*" &&  objContElm.all) objColl = objContElm.all;
+  var arr = new Array();
+  var delim = strClass.indexOf('|') != -1  ? '|' : ' ';
+  var arrClass = strClass.split(delim);
+  for (var i = 0, j = objColl.length; i < j; i++) {
+    var arrObjClass = objColl[i].className.split(' ');
+    if (delim == ' ' && arrClass.length > arrObjClass.length) continue;
+    var c = 0;
+    comparisonLoop:
+    for (var k = 0, l = arrObjClass.length; k < l; k++) {
+      for (var m = 0, n = arrClass.length; m < n; m++) {
+        if (arrClass[m] == arrObjClass[k]) c++;
+        if (( delim == '|' && c == 1) || (delim == ' ' && c == arrClass.length)) {
+          arr.push(objColl[i]);
+          break comparisonLoop;
+        }
+      }
+    }
+  }
+  return arr;
+}
+
+
+
+function checkButtonText() {
+  var buttons = getElementsByClassName('contents','div',document);
+  for (i = 0;i < buttons.length; i++) {
+    if (buttons[i].offsetHeight > 30) {
+      buttons[i].setAttribute('class','contents2line',0);
+    }
+  }
+  for (i = 0;i < buttons.length; i++) {
+    if (buttons[i].offsetHeight < 35 && buttons[i].getAttribute('class') == 'contents2line') {
+      buttons[i].setAttribute('style','padding-top: 9px;',0);
+    }
+  }
+
+}
+
+  </script>
+	<title>3. Preparación del mando</title>
+	
+	<script type="text/javascript" src="/typo3temp/javascript_93077bb238.js"></script>
+
+</head>
+<body onkeypress="kpress(false);" onload="initPage();MM_preloadImages(
+'../common_data/CHM_common_source_ro/button_back_ro_esp.png',
+'../common_data/CHM_common_source/button_back_esp.png',
+'../common_data/CHM_common_source_ro/button_next_ro_esp.png',
+'../common_data/CHM_common_source/button_next_esp.png',
+'../common_data/CHM_common_source_ro/button_index_ro_esp.png',
+'../common_data/CHM_common_source/button_index_esp.png',
+'../common_data/CHM_common_source_ro/button_index_top_ro_esp.png',
+'../common_data/CHM_common_source/button_index_top_esp.png');
+checkButtonText();hideButton();">
+
+<table width="100%" height="456" border="0" cellpadding="0" cellspacing="0" id="maintable">
+	<tr>
+		<td align="center" background="../common_data/CHM_common_source/title_top_bar.png">
+			<table width="608" height="79" border="0" cellpadding="0" cellspacing="0">
+				<tr>
+					<td width="90" id="bgpagenumb"><div class="style_number">3</div></td>
+					<td width="309"><span class="cms_style_title"><div class="style_title_m">Preparación del mando</div></span></td>
+					<td width="123"><a href="../index.html" target="_parent" onclick="wiiReturnSound()" onmouseover="wiiFocusSound()"><img src="../common_data/CHM_common_source/button_index_top_esp.png" alt="return_top" name="return_top" width="123" height="79" border="0" id="return_top" onmouseover="MM_swapImage('return_top','','../common_data/CHM_common_source_ro/button_index_top_ro_esp.png',1)" onmouseout="MM_swapImgRestore()" /></a></td>
+					<td width="79"></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td height="285" align="center" valign="top">
+			<table width="530" border="0" cellpadding="0" cellspacing="0">
+				<tr align="center">
+				    <td width="478" valign="top" class="frame_margin"><div id="contentContainer">
+	<!--  CONTENT ELEMENT, uid:36097/shortcut [begin] -->
+		<div class="style_main"> <a id="c36097"></a>
+		<!--  Inclusion of other records (by reference): [begin] -->
+			
+	<!--  CONTENT ELEMENT, uid:933/html [begin] -->
+		<div class="style_main"> <a id="c933"></a>
+		<!--  Raw HTML content: [begin] -->
+			<table width="478" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#43B6DF">
+<tr>
+<td width="5" valign="top"><img src="/fileadmin/template/fr/common_data/CHM_common_source/heading_tl.png" width="5" height="5" /></td>
+<td></td>
+<td width="5" valign="top"><img src="/fileadmin/template/fr/common_data/CHM_common_source/heading_tr.png" width="5" height="5" /></td>
+</tr>
+<tr>
+<td valign="top"></td>
+<td width="468" valign="top" class="style_bar">Cómo sujetar el mando de Wii</td>
+<td valign="top"></td>
+</tr>
+<tr>
+<td valign="top"><img src="../common_data/CHM_common_source/heading_bl.png" width="5" height="5" /></td>
+<td valign="top"></td>
+<td valign="top"><img src="../common_data/CHM_common_source/heading_br.png" width="5" height="5" /></td>
+</tr>
+</table>
+<img src="04_01_esp.png" class="spacer10t" />
+<table width="478" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#43B6DF" class="spacer20t">
+<tr>
+<td width="5" valign="top"><img src="../common_data/CHM_common_source/heading_tl.png" width="5" height="5" /></td>
+<td></td>
+<td width="5" valign="top"><img src="../common_data/CHM_common_source/heading_tr.png" width="5" height="5" /></td>
+</tr>
+<tr>
+<td valign="top"></td>
+<td width="468" valign="top" class="style_bar">Cómo colocar la correa del mando de Wii</td>
+<td valign="top"></td>
+</tr>
+<tr>
+<td valign="top"><img src="../common_data/CHM_common_source/heading_bl.png" width="5" height="5" /></td>
+<td valign="top"></td>
+<td valign="top"><img src="../common_data/CHM_common_source/heading_br.png" width="5" height="5" /></td>
+</tr>
+</table>
+<div class="spacer5t">
+<div class="style_main_s"></div>
+</div>
+<div class="spacer10t">
+<div class="style_main">
+<ol>
+<li class="numb1">Pasa la mano por la correa del mando de Wii y sujétalo firmemente.</li>
+</ol>
+
+</div>
+<img src="04_02.png" class="spacer10t" /></div>
+<div class="spacer20t">
+<div class="style_main">
+<ol>
+<li class="numb2">Ajusta el cierre para que no se suelte la correa.</li>
+</ol>
+</div>
+<img src="04_03_esp.png" class="spacer10t" />
+<div class="spacer5t">
+<div class="style_main_s">
+<div class="caution"><strong>Nota: </strong>Si el  cierre de tu correa tiene un seguro, bájalo hasta que oigas un clic. Así  evitarás que se suelte la correa.</div>
+</div>
+</div>
+</div>
+		<!--  Raw HTML content: [end] -->
+			</div>
+	<!--  CONTENT ELEMENT, uid:933/html [end] -->
+		
+	<!--  CONTENT ELEMENT, uid:941/html [begin] -->
+		<div class="style_main"> <a id="c941"></a>
+		<!--  Raw HTML content: [begin] -->
+			<table width="478" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#43B6DF" class="spacer20t">
+<tr>
+<td width="5" valign="top"><img src="../common_data/CHM_common_source/heading_tl.png" width="5" height="5" /></td>
+<td></td>
+<td width="5" valign="top"><img src="../common_data/CHM_common_source/heading_tr.png" width="5" height="5" /></td>
+</tr>
+<tr>
+<td valign="top"></td>
+<td width="468" valign="top" class="style_bar">Cómo sincronizar el mando de Wii con la consola Wii</td><td valign="top"></td>
+</tr>
+<tr>
+<td valign="top"><img src="../common_data/CHM_common_source/heading_bl.png" width="5" height="5" /></td>
+<td valign="top"></td>
+<td valign="top"><img src="../common_data/CHM_common_source/heading_br.png" width="5" height="5" /></td>
+</tr>
+</table>
+<div class="spacer10tu">
+  <div class="style_main">
+    <p style="margin-bottom:10px">Este procedimiento te permitirá establecer la comunicación entre el mando y la consola.</p>
+    <p style="margin-bottom:10px">Existen dos métodos para sincronizar un mando con la consola:</p>
+    <p style="margin-bottom:10px"><strong>Modo  normal </strong>- El<strong> modo normal</strong> de sincronización se utiliza para conectar mandos adicionales a la consola o  para volver a sincronizar el mando incluido con la consola Wii. Una vez  sincronizado, el mando permanecerá conectado a la consola a menos que  sobrescribas dicho ajuste al sincronizar el mando con otra consola diferente.</p>
+     <p style="margin-bottom:10px"><strong>Modo único</strong> - Este  modo te permitirá usar el mando de Wii temporalmente con la consola de un  amigo, así como que tus amigos puedan usar sus mandos con tu consola. No  sobrescribirá el ajuste del <strong>modo normal </strong>guardado  en el mando de Wii. En este modo, el mando solo se comunicará con la nueva  consola mientras esté encendida. Al apagarla, el mando dejará de estar  sincronizado con la consola.</p>
+    <p style="margin-bottom:20px"><strong>Nota: </strong>Tan solo  un mando de Wii sincronizado en el <strong>modo  normal</strong> puede encender o apagar la consola.</p>
+  <p style="margin-bottom:10px"><strong>Sincronización en modo normal</strong></p>
+  <strong>Nota: </strong>Asegúrate  de que el mando de Wii tiene pilas.</div>
+</div>
+<div class="style_main">
+  <ol>
+    <li class="numb1">Pulsa el Botón POWER de la consola Wii para encenderla.</li>
+    <li class="numb2">Abre la tapa de la ranura para tarjetas SD situada en la parte frontal de la consola Wii.</li>
+    <li class="numb3">Retira la tapa del compartimento de las pilas situado en la parte posterior del mando de Wii.</li>
+    <li class="numb4">Pulsa brevemente el Botón <img src="../common_data/CHM_common_source/icon_sync.png" class="pbm"  align="absmiddle"/> situado en el compartimento de las pilas del mando de Wii. A continuación, pulsa brevemente el Botón <img src="../common_data/CHM_common_source/icon_sync_box.png" class="pbl" align="absmiddle" /> situado en la ranura para tarjetas SD. Los indicadores de jugador parpadearán durante el proceso de sincronización. Cuando las luces dejen de parpadear, la conexión se habrá completado. El indicador de jugador que permanezca iluminado hará referencia al número del jugador que utilice ese mando de Wii.</li></ol>
+
+</div>
+        <div class="spacer10tu">
+          <div align="right"><img src="04_04_ALL.png" class="spacer10t" /><br />
+              <p  align="left" class="style_title_ss" style="padding-left:25px; line-height:1.2;">Se debe seguir este procedimiento con cada mando de Wii adicional que conectes a la consola.</p>
+          </div>
+        </div>
+        <div  class="style_main" align="left" style="padding-left:25px" ><strong>Nota:</strong> El  número de indicadores que parpadeen mostrará el nivel de carga de las pilas del  mando de Wii que se esté sincronizando.</div>
+		<div class="style_main">
+        <ol><li class="numb5">Cierra la tapa de la ranura para tarjetas SD en la consola Wii y vuelve a colocar la tapa del compartimento de las pilas del mando de Wii.<p style="margin-bottom:20px"><strong>Nota:</strong> Una vez  se haya establecido la conexión, se encenderá el indicador que señala el número  del jugador.</p>
+	  </li>
+    </ol>
+  <p style="margin-bottom:10px"><strong>Sincronización en modo único</strong></p>
+  <strong>Nota: </strong>Este modo  desactiva de forma temporal el ajuste de sincronización del <strong>modo normal</strong> para todos los mandos de  Wii hasta que se apaga la consola Wii. Cuando se vuelva a encender la consola,  se restaurará la configuración del <strong>modo  normal</strong>.</div>
+  
+        <div class="spacer10t">
+<div class="style_main">
+<ol>
+<li class="numb1">Pulsa el Botón <img src="../common_data/CHM_common_source/home_button.png" align="absmiddle" /> en el mando de Wii que esté sincronizado con la  consola.</li>
+<li class="numb2">Selecciona la opción CONFIGURAR MANDOS DE Wii en el <strong>menú HOME</strong> y, a continuación, elige  la opción NUEVA CONEXIÓN.</li>
+</ol>
+</div>
+<p style="text-align: center;"><img src="04_06_esp_nun.png" class="spacer10t" style="margin-bottom:10px"/></p>
+<div class="style_main">
+<ol>
+<li class="numb3">Pulsa a la vez los Botones <img src="../common_data/CHM_common_source/btn_1key.png" align="absmiddle" /> y <img src="../common_data/CHM_common_source/btn_2key.png" align="absmiddle" /> en el mando de Wii que quieras sincronizar con la consola. El orden en que sincronices los mandos de Wii determinará el orden de los jugadores en las partidas multijugador.</li>
+</ol>
+</div>
+<p style="text-align:center;"><img src="04_07_esp_nun.png" class="spacer10t" style="margin-bottom:10px"/></p>
+<div class="style_main">
+<ol>
+<li class="numb4" style="margin-bottom:10px">El indicador de jugador parpadeará durante el proceso de sincronización. Cuando deje de parpadear, la conexión se habrá completado. En la siguiente ilustración se explica qué representan los distintos indicadores.</li>
+</ol>
+</div>
+</div>
+
+<div class="style_main_s">
+  <table width="478" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+      <td valign="middle" rowspan="2"><img src="04_08_esp_nun.png" class="spacer10t" /></td>
+      <td width="40%" valign="top"><p class="style_title_ss" style="margin-bottom:10px; line-height:1.2;">Durante el proceso de sincronización, el número de indicadores que parpadeen mostrará el nivel de carga de las pilas del mando de Wii que se esté sincronizando.</p></td>
+    </tr>
+    <tr>
+      <td width="40%" valign="top"><p class="style_title_ss" style=" line-height:1.2;">Una vez finalizado el proceso, el indicador que permanezca iluminado hará referencia al número del jugador que utilice ese mando de Wii.</p></td>
+    </tr>
+  </table>
+<p class="style_main" style="margin-top:20px"><strong>IMPORTANTE:</strong> Si el  mando de Wii pierde la sincronización con la consola y no puedes volver a  sincronizarlo, consulta el manual de instalación de la consola Wii.</p></div>
+		<!--  Raw HTML content: [end] -->
+			</div>
+	<!--  CONTENT ELEMENT, uid:941/html [end] -->
+		
+		<!--  Inclusion of other records (by reference): [end] -->
+			</div>
+	<!--  CONTENT ELEMENT, uid:36097/shortcut [end] -->
+		</div></td>
+				    <td width="52" valign="top"></td>
+				  </tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td height="60" align="center">
+			<table width="550" border="0" align="center" cellpadding="0" cellspacing="0">
+				<tr>
+					<td width="152" align="left" id="prev"><a href="../page_02/page_02.html" onfocus="blurLink(this);"  target="_parent" onclick="wiiReturnSound()" onmouseover="wiiFocusSound()"><img src="../common_data/CHM_common_source/button_back_esp.png" alt="back" name="foot_back" width="152" height="54" vspace="3" border="0" id="foot_back" onmouseover="MM_swapImage('foot_back','','../common_data/CHM_common_source_ro/button_back_ro_esp.png',1)" onmouseout="MM_swapImgRestore()" /></a></td>
+					<td width="196" align="center" id="backlink"><a onmouseover="wiiFocusSound()" onclick="wiiReturnSound()" target="_parent" href="../index.html" ><img src="../common_data/CHM_common_source/button_index_esp.png" alt="return" name="return_index" width="152" height="54" vspace="3" border="0" id="return_index" onmouseover="MM_swapImage('return_index','','../common_data/CHM_common_source_ro/button_index_ro_esp.png',1)" onmouseout="MM_swapImgRestore()" /></a></td>
+					<td width="152" align="right" id="next"><a href="../page_04/page_04.html" onfocus="blurLink(this);"  target="_parent" onclick="wiiReturnSound()" onmouseover="wiiFocusSound()"><img src="../common_data/CHM_common_source/button_next_esp.png" alt="next" name="foot_next" width="152" height="54" vspace="3" border="0" id="foot_next" onmouseover="MM_swapImage('foot_next','','../common_data/CHM_common_source_ro/button_next_ro_esp.png',1)" onmouseout="MM_swapImgRestore()" /></a></td>
+					<td width="50"></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td height="32" background="../common_data/CHM_common_source/common_bottom.png"></td>
+	</tr>
+</table>
+
+</body>
+</html>
+<!-- Parsetime: 609 ms-->

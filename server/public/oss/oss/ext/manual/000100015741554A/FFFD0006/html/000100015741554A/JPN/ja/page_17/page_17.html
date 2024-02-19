@@ -1,0 +1,206 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>17 チェスのルール（2）</title>
+<script type="text/javascript" language="JavaScript" src='../../../../../js/shop.js'></script>
+<script type="text/javascript" language="JavaScript" src='../../../../../js/sound.js'></script>
+<script type="text/javascript" language="JavaScript" src='../../../../../js/images.js'></script>
+<script type="text/javascript" language="JavaScript" src='../../../../../js/manual.js'></script>
+<script type="text/javascript" language="JavaScript" src='../../../../../js/input.js'></script>
+<link href="../common_data/cssfile.css" rel="stylesheet" type="text/css" />
+</head>
+<body onkeypress="kpress(false);" onload="initPage(); MM_preloadImages(
+	'../common_data/CHM_common_source_ro/common_button_back_ro.png',
+	'../common_data/CHM_common_source_ro/common_button_next_ro.png',
+	'../common_data/CHM_common_source_ro/common_button_index_ro.png',
+	'../common_data/CHM_common_source_ro/return_index_button_ro.png')">
+<table width="100%" height="456" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td align="center" background="../common_data/CHM_common_source/title_top_bar.png"><table width="608" height="79" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td width="90" id="bgpagenumb"><div class="style_number2k">17</div></td>
+<td width="309"><div class="style_title">チェスのルール（2）</div></td>
+<td width="130"><a href="../index.html" target="_parent" onclick="wiiReturnSound()" onmouseover="wiiFocusSound()"><img src="../common_data/CHM_common_source/return_index_button.png" alt="return_top" name="return_top" width="130" height="79" border="0" id="return_top" onmouseover="MM_swapImage('return_top','','../common_data/CHM_common_source_ro/return_index_button_ro.png',1)" onmouseout="MM_swapImgRestore()" /></a></td>
+<td width="79"></td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<td height="285" align="center" valign="top"><table width="530" border="0" cellpadding="0" cellspacing="0">
+<tr align="center">
+<td width="478" valign="top" class="frame_margin">
+<div class="style_main">
+<p class="caution1">●&nbsp;<strong>駒の種類と初期配置</strong><br />
+盤面は64マスで、持ち駒は6種類16個です。また、この初期配置はつねに同じです。</p>
+<p class="caution_s1" style="margin-left:1.3em;">※白が先手になります。</p>
+<p class="caution_s1" style="margin-left:1.3em;">※クイーンは自分の駒と同じ色のマスに置かれ、キングはその隣に配置されます。</p>
+</div>
+<img src="chess_img_17_a.png" width="452" height="241" class="spacer10t" style="margin-left:26px;" />
+<img src="chess_img_17_b.png" width="452" height="482" class="spacer10t" style="margin-left:26px;" />
+<div class="spacer10t">
+<div class="style_main">
+<p class="caution1"><span class="color_blue"><strong>&nbsp;・駒の動き</strong></span><br />
+各駒の動きをマスターしましょう。下の図で緑色に表示されている範囲に移動できます。</p>
+</div>
+</div>
+
+<table width="452" border="0" cellpadding="0" cellspacing="0" style="margin-left:26px;" class="spacer10t">
+<tr>
+<td align="left" valign="top"><img src="chess_img_17_c.png" width="207" height="248" />
+<div class="style_main_s" style="width:207px;">
+<p>縦横斜めに1マス進むことができます。</p>
+</div></td>
+<td align="right" valign="top"><img src="chess_img_17_d.png" width="207" height="249" />
+<div class="style_main_s" style="width:207px;">
+<p>縦横斜めに何マスでも進むことができます。</p>
+</div></td>
+</tr>
+</table>
+
+<table width="452" border="0" cellpadding="0" cellspacing="0" style="margin-left:26px;" class="spacer10t">
+<tr>
+<td align="left" valign="top"><img src="chess_img_17_e.png" width="207" height="248" />
+<div class="style_main_s" style="width:207px;">
+<p>斜めに何マスでも進むことができます。</p>
+</div></td>
+<td align="right" valign="top"><img src="chess_img_17_f.png" width="207" height="248" />
+<div class="style_main_s" style="width:207px;">
+<p>前後左右2マス先の左右に移動できます。また、ほかの駒を飛び越えることができます。</p>
+</div></td>
+</tr>
+</table>
+
+<table width="452" border="0" cellpadding="0" cellspacing="0" style="margin-left:26px;" class="spacer10t">
+<tr>
+<td align="left" valign="top"><img src="chess_img_17_g.png" width="207" height="248" />
+<div class="style_main_s" style="width:207px;">
+<p>縦横に何マスでも進むことができます。</p>
+</div></td>
+<td align="right" valign="top"><img src="chess_img_17_h.png" width="207" height="248" />
+<div class="style_main_s" style="width:207px;">
+<p>前方に1マス移動できます。なお、そのポーンを動かす一手目のみ2マス前に進めます。</p>
+</div></td>
+</tr>
+</table>
+
+<div class="spacer10t" style="overflow:auto;">
+<table width="207" class="floatright">
+<tr><td>
+<img src="chess_img_17_i.png" width="207" height="207" />
+<div class="style_main_s">
+<p>図の場合、移動先にあるポーンまたはビショップが取れます。</p>
+</div>
+</td></tr>
+</table>
+<div class="style_main">
+<p class="caution1">●&nbsp;<strong>駒を取る</strong><br />
+ポーン以外の駒は、移動先に相手の駒があれば取ることができます。取った駒は盤面からなくなります。なお、取った駒を自分の駒として使うことはできません。</p>
+</div>
+</div>
+
+<div class="spacer10t">
+<div class="style_main">
+<p class="caution1"><span class="color_blue"><strong>&nbsp;・ポーンの場合</strong></span><br />
+ポーンは移動先に相手の駒があっても取ることができません。そのかわり、斜め前にある駒を取って移動できます。<br />
+また、相手のポーンが2マス移動したときはその直後に限り、相手のポーンが通過したマスに移動して相手のポーンを取ることができます（アンパッサン）。</p>
+</div>
+</div>
+
+<table width="452" border="0" cellpadding="0" cellspacing="0" style="margin-left:26px;" class="spacer10t">
+<tr>
+<td align="left" valign="top">
+<img src="chess_img_17_j.png" width="207" height="237" />
+<div class="style_main_s" style="width:207px;"><p>図の場合、ポーンは取れませんが、ルークかクイーンは取れます。</p></div>
+</td>
+<td align="right" valign="top">
+<img src="chess_img_17_k.png" width="207" height="237" />
+<div class="style_main_s" style="width:207px;">
+<p>図の場合、相手のポーンが通過したマスに移動してそのポーンを取ることができます。</p>
+</div>
+</td>
+</tr>
+</table>
+
+<div class="spacer10t"><img src="chess_ph_17.png" width="207" height="166" class="floatright" />
+<div class="style_main">
+<p class="caution1">●&nbsp;<strong>プロモーション</strong><br />
+ポーンは、一番上の段まで進んだときにキング以外の好きな駒になることができます（プロモーション）。右のような画面が表示されたら、<img src="../common_data/CHM_common_source/btn_cross.gif" width="27" height="27" class="btnicon_cross" />左右で変更したい駒を選び、<img src="../common_data/CHM_common_source/btn_large_a.gif" width="22" height="22" class="btnicon_normal" />で決定してください。</p>
+<p class="caution_s1" style="margin-left:1.3em;">※ポーン以外の駒は、一番上の段まで進んでも駒の種類や動かしかたが変わりません。</p>
+</div>
+</div>
+
+<div class="spacer10t">
+<div class="style_main">
+<p class="caution1">●&nbsp;<strong>キャスリング</strong><br />
+下の図の状況になった場合は、一手で2つの駒（キングとルーク）を同時に動かし、キングを安全な位置に動かせます（キャスリング）。</p>
+<p class="caution_s1" style="margin-left:1.3em;">※下の図では、右下のルークでのキャスリングを説明していますが、左下のルークでも条件を満たしていればキャスリングができます。</p>
+</div>
+</div>
+
+<table width="452" border="0" cellpadding="0" cellspacing="0" class="spacer10t" style="margin-left:26px;">
+<tr>
+<td align="right" valign="top" width="208"><img src="chess_img_17_l.png" width="207" height="167" />
+<div class="style_main_s" style="width:207px;">
+<p>駒の配置が上の状態になったときは、キャスリングができます（盤面右下の状況です）。</p>
+</div></td>
+<td align="center" valign="top"><img src="arrow_1.gif" width="23" height="26" style="margin:70px 5px 0 8px;" /></td>
+<td align="left" valign="top" width="208"><img src="chess_img_17_m.png" width="207" height="167" />
+<div class="style_main_s" style="width:207px;">
+<p>キングを右に2マス動かすと自動的にキャスリングが発生し、上の配置になります。</p>
+</div></td>
+</tr>
+</table>
+<div class="spacer5t">
+<div class="style_main">
+<p class="caution_s1" style="margin-left:1.3em;">※キャスリングするときのみ、キングは2マス動かせます。</p>
+<p class="caution_s1" style="margin-left:1.3em;">※キャスリングはプレイ中1回しか行えません。</p>
+<p class="caution_s1" style="margin-left:1.3em;">※初期位置で、キングがある側でのキャスリングを「キングサイド・キャスリング」、クイーンがある側でのキャスリングを「クイーンサイド・キャスリング」と言います。</p>
+</div>
+</div>
+
+<table width="478" border="0" align="center" cellpadding="0" cellspacing="0" class="spacer20t">
+<tr>
+<td width="12" height="12"><img src="../common_data/CHM_common_source/kadomaru_ul.png" width="12" height="12" /></td>
+<td width="454" height="12"><img src="../common_data/CHM_common_source/kadomaru_line_u.png" width="454" height="12" /></td>
+<td width="12" height="12"><img src="../common_data/CHM_common_source/kadomaru_ur.png" width="12" height="12" /></td>
+</tr>
+<tr>
+<td width="12" background="../common_data/CHM_common_source/kadomaru_line_l.png"><img src="../common_data/CHM_common_source/kadomaru_line_l.png" width="12" height="1" /></td>
+<td><div class="style_main">
+<p><strong>【キャスリングができる条件】</strong></p>
+<p class="caution_s1">・キングとルークの間に駒がない</p>
+<p class="caution_s1">・キングとルークを一度も動かしていない</p>
+<p class="caution_s1">・キングにチェックがかかっていない</p>
+<p class="caution_s1">・キングが移動するルートに相手の駒が移動できない状態である</p>
+</div>
+</td>
+<td width="12" background="../common_data/CHM_common_source/kadomaru_line_r.png"><img src="../common_data/CHM_common_source/kadomaru_line_r.png" width="12" height="1" /></td>
+</tr>
+<tr>
+<td width="12" height="12"><img src="../common_data/CHM_common_source/kadomaru_dl.png" width="12" height="12" /></td>
+<td width="454" height="12"><img src="../common_data/CHM_common_source/kadomaru_line_d.png" width="454" height="12" /></td>
+<td width="12" height="12"><img src="../common_data/CHM_common_source/kadomaru_dr.png" width="12" height="12" /></td>
+</tr>
+</table>
+
+</td>
+<td width="52" valign="top"></td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<td height="60" align="center"><table width="550" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td width="152" align="left"><a href="../page_16/page_16.html" target="_parent" onclick="wiiLeftScroll()" onmouseover="wiiFocusSound()"><img src="../common_data/CHM_common_source/common_button_back.png" alt="back" name="foot_back" width="152" height="54" vspace="3" border="0" id="foot_back" onmouseover="MM_swapImage('foot_back','','../common_data/CHM_common_source_ro/common_button_back_ro.png',1)" onmouseout="MM_swapImgRestore()" /></a></td>
+<td width="196" align="center"><a href="../index.html" target="_parent" onclick="wiiReturnSound()" onmouseover="wiiFocusSound()"><img src="../common_data/CHM_common_source/common_button_index.png" alt="return" name="return_index" width="152" height="54" vspace="3" border="0" id="return_index" onmouseover="MM_swapImage('return_index','','../common_data/CHM_common_source_ro/common_button_index_ro.png',1)" onmouseout="MM_swapImgRestore()" /></a></td>
+<td width="152" align="right"><a href="../page_18/page_18.html" target="_parent" onclick="wiiRightScroll()" onmouseover="wiiFocusSound()"><img src="../common_data/CHM_common_source/common_button_next.png" alt="next" name="foot_next" width="152" height="54" vspace="3" border="0" id="foot_next" onmouseover="MM_swapImage('foot_next','','../common_data/CHM_common_source_ro/common_button_next_ro.png',1)" onmouseout="MM_swapImgRestore()" /></a></td>
+<td width="50"></td>
+</tr>
+</table></td></tr>
+<tr>
+<td height="32" background="../common_data/CHM_common_source/common_bottom.png"></td>
+</tr>
+</table>
+</body>
+</html>

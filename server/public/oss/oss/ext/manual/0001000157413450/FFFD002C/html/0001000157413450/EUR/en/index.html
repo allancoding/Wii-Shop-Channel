@@ -1,0 +1,149 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta name="copyright" content=" (c) 2008 Nintendo - created by Artwork Services Department - Nintendo of Europe GmbH" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<!-- 
+    copyright Nintendo 2009
+
+	This website is powered by TYPO3 - inspiring people to share!
+	TYPO3 is a free open source Content Management Framework initially created by Kasper Skaarhoj and licensed under GNU/GPL.
+	TYPO3 is copyright 1998-2008 of Kasper Skaarhoj. Extensions are copyright of their respective owners.
+	Information and contribution at http://typo3.com/ and http://typo3.org/
+-->
+
+	
+	<link rel="stylesheet" type="text/css" href="/typo3temp/stylesheet_44f2ec0479.css" />
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	
+	<script type="text/javascript" language="JavaScript" src='../../../../js/index.js'></script>
+	<script type="text/javascript" language="JavaScript" src='../../../../js/shop.js'></script>
+	<script type="text/javascript" language="JavaScript" src='../../../../js/sound.js'></script>
+	<script type="text/javascript" language="JavaScript" src='../../../../js/images.js'></script>
+	<script type="text/javascript" language="JavaScript" src='../../../../js/manual.js'></script>
+	<link href="index_data/index.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript">
+function hideButton() {
+  if (document.getElementById("maintable") != undefined) {
+    var bodyHeight = document.getElementById("maintable").scrollHeight;
+    if (bodyHeight <= 456) {
+    	 var objBacklink = document.getElementById('backlink');
+    	 if (objBacklink.innerHTML != '') {
+    	 	var elem = document.getElementById("backlink");
+       	elem.innerHTML = '';
+    	 }
+    }
+  } 
+  
+}
+
+function getElementsByClassName(strClass, strTag, objContElm) {
+  strTag = strTag || "*";
+  objContElm = objContElm || document;
+  var objColl = objContElm.getElementsByTagName(strTag);
+  if (!objColl.length &&  strTag == "*" &&  objContElm.all) objColl = objContElm.all;
+  var arr = new Array();
+  var delim = strClass.indexOf('|') != -1  ? '|' : ' ';
+  var arrClass = strClass.split(delim);
+  for (var i = 0, j = objColl.length; i < j; i++) {
+    var arrObjClass = objColl[i].className.split(' ');
+    if (delim == ' ' && arrClass.length > arrObjClass.length) continue;
+    var c = 0;
+    comparisonLoop:
+    for (var k = 0, l = arrObjClass.length; k < l; k++) {
+      for (var m = 0, n = arrClass.length; m < n; m++) {
+        if (arrClass[m] == arrObjClass[k]) c++;
+        if (( delim == '|' && c == 1) || (delim == ' ' && c == arrClass.length)) {
+          arr.push(objColl[i]);
+          break comparisonLoop;
+        }
+      }
+    }
+  }
+  return arr;
+}
+
+
+
+function checkButtonText() {
+  var buttons = getElementsByClassName('contents','div',document);
+  for (i = 0;i < buttons.length; i++) {
+    if (buttons[i].offsetHeight > 30) {
+      buttons[i].setAttribute('class','contents2line',0);
+    }
+  }
+  for (i = 0;i < buttons.length; i++) {
+    if (buttons[i].offsetHeight < 35 && buttons[i].getAttribute('class') == 'contents2line') {
+      buttons[i].setAttribute('style','padding-top: 9px;',0);
+    }
+  }
+  
+}
+
+  </script>
+	<title>WarioWare Do it Yourself - Showcase</title>
+	
+	<script type="text/javascript" src="/typo3temp/javascript_93077bb238.js"></script>
+
+</head>
+<body onkeypress="kdown(15);" onload="initPage();content.focus();MM_preloadImages(
+'index_data/source_pict_index/index_button_ro.png',
+'index_data/source_pict_index/index_button.png',
+'index_data/source_pict_index/title_bar1.png',
+'index_data/source_pict_index/title_bar2.png',
+'index_data/source_pict_index/title_bar3.png',
+'index_data/source_pict_index/back_contents_bar_ro_ukv.png',
+'index_data/source_pict_index/back_contents_bar_ukv.png',
+'index_data/source_pict_index/scroll.png',
+'index_data/source_pict_index/page.png',
+'index_data/source_pict_index/a_button.png');
+checkButtonText();hideButton();">
+
+	<div style="position:absolute; left:0px; top:0px; width:1px; height:1px; z-index:6;"><img src="common_data/CHM_common_source/spacer.png" name="ktouch" width="1" height="1" id="ktouch" alt="" /></div>
+<!-- header -->
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+	<tr>
+	<td><img src="index_data/source_pict_index/title_bar1.png" width="100%" height="101" alt="" /></td>
+	<td width="606" align="center"><table style="height: 101px;"width="606" align="center" cellpadding="0" cellspacing="0" border="0">
+	<tr>
+	<td width="386" background="index_data/source_pict_index/title_bar1.png"><div class="header_GameTitle" id="title" style="letter-spacing:-1px"><img src="index_data/source_pict_index/index_title.png" width="359" height="56" border="0" alt="" title="" /></div></td>
+	<td width="220" align="left" background="index_data/source_pict_index/title_bar3.png"><img src="index_data/source_pict_index/title_bar2.png" width="193" height="101" alt="" /></td>
+	</tr>
+	</table></td>
+	<td><img src="index_data/source_pict_index/title_bar3.png" width="100%" height="101" alt="" /></td>
+	</tr>
+	</table>
+
+<!-- content-->
+<div id="content" align="center" onblur="content.focus();">
+	<div style="overflow: auto; width: 100%; margin-top: 3px;">
+		<div align="center" id="cms_content"><div class="midasi1"><div class="midasi_txt">General Information</div></div><div class="Button_link"><div class="button" onclick="jump('page_01/page_01.html');wiiSelectSound()" onmouseover="chimg('menu1');wiiFocusSound()" onmouseout="bkimg('menu1');" id="menu1"><div class="number ">1</div><div class="contents">Important Health and Safety Information</div></div></div><div class="Button_link"><div class="button" onclick="jump('page_02/page_02.html');wiiSelectSound()" onmouseover="chimg('menu2');wiiFocusSound()" onmouseout="bkimg('menu2');" id="menu2"><div class="number ">2</div><div class="contents">Usage Precautions</div></div></div><div class="Button_link"><div class="button" onclick="jump('page_03/page_03.html');wiiSelectSound()" onmouseover="chimg('menu3');wiiFocusSound()" onmouseout="bkimg('menu3');" id="menu3"><div class="number ">3</div><div class="contents">Internet Precautions</div></div></div><div class="Button_link"><div class="button" onclick="jump('page_04/page_04.html');wiiSelectSound()" onmouseover="chimg('menu4');wiiFocusSound()" onmouseout="bkimg('menu4');" id="menu4"><div class="number ">4</div><div class="contents">Controller Setup</div></div></div><div class="Button_link"><div class="button" onclick="jump('page_05/page_05.html');wiiSelectSound()" onmouseover="chimg('menu5');wiiFocusSound()" onmouseout="bkimg('menu5');" id="menu5"><div class="number ">5</div><div class="contents">Contact Information</div></div></div><div class="Button_link"><div class="button" onclick="jump('page_06/page_06.html');wiiSelectSound()" onmouseover="chimg('menu6');wiiFocusSound()" onmouseout="bkimg('menu6');" id="menu6"><div class="number ">6</div><div class="contents">Age Ratings</div></div></div><div class="midasi1" style="margin-top: 20px;"><div class="midasi_txt">Getting Started</div></div><div class="Button_link"><div class="button" onclick="jump('page_07/page_07.html');wiiSelectSound()" onmouseover="chimg('menu7');wiiFocusSound()" onmouseout="bkimg('menu7');" id="menu7"><div class="number ">7</div><div class="contents">Introduction</div></div></div><div class="Button_link"><div class="button" onclick="jump('page_08/page_08.html');wiiSelectSound()" onmouseover="chimg('menu8');wiiFocusSound()" onmouseout="bkimg('menu8');" id="menu8"><div class="number ">8</div><div class="contents">Controls</div></div></div><div class="Button_link"><div class="button" onclick="jump('page_09/page_09.html');wiiSelectSound()" onmouseover="chimg('menu9');wiiFocusSound()" onmouseout="bkimg('menu9');" id="menu9"><div class="number ">9</div><div class="contents">Main Menu</div></div></div><div class="midasi1" style="margin-top: 20px;"><div class="midasi_txt">Wario-Man Super Store</div></div><div class="Button_link"><div class="button" onclick="jump('page_10/page_10.html');wiiSelectSound()" onmouseover="chimg('menu10');wiiFocusSound()" onmouseout="bkimg('menu10');" id="menu10"><div class="number ">10</div><div class="contents">Games</div></div></div><div class="Button_link"><div class="button" onclick="jump('page_11/page_11.html');wiiSelectSound()" onmouseover="chimg('menu11');wiiFocusSound()" onmouseout="bkimg('menu11');" id="menu11"><div class="number ">11</div><div class="contents">Music</div></div></div><div class="Button_link"><div class="button" onclick="jump('page_12/page_12.html');wiiSelectSound()" onmouseover="chimg('menu12');wiiFocusSound()" onmouseout="bkimg('menu12');" id="menu12"><div class="number ">12</div><div class="contents">Comics</div></div></div><div class="midasi1" style="margin-top: 20px;"><div class="midasi_txt">Distribution Centre</div></div><div class="Button_link"><div class="button" onclick="jump('page_13/page_13.html');wiiSelectSound()" onmouseover="chimg('menu13');wiiFocusSound()" onmouseout="bkimg('menu13');" id="menu13"><div class="number ">13</div><div class="contents">NinSoft Store</div></div></div><div class="Button_link"><div class="button" onclick="jump('page_14/page_14.html');wiiSelectSound()" onmouseover="chimg('menu14');wiiFocusSound()" onmouseout="bkimg('menu14');" id="menu14"><div class="number ">14</div><div class="contents">Communicating with a Nintendo DS System</div></div></div><div class="Button_link"><div class="button" onclick="jump('page_15/page_15.html');wiiSelectSound()" onmouseover="chimg('menu15');wiiFocusSound()" onmouseout="bkimg('menu15');" id="menu15"><div class="number ">15</div><div class="contents">Communicating with Wii Friends</div></div></div></div>
+	</div>
+</div>
+	
+<!-- footer -->
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td align="center" background="index_data/source_pict_index/bottom_bg.png"><table width="608" align="center" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td><!--<div id="display">Bottom frame</div>-->
+<div id="undericonplus"><img src="index_data/source_pict_index/scroll.png" width="24" height="24" alt="" /></div>
+<div class="undertxt_s">: <span class="scroll">Scroll</span></div>
+
+<div id="undericonbpage"><img src="index_data/source_pict_index/page.png" width="24" height="24" alt="" /></div>
+<div class="undertxt_s">: <span class="turn_page">Turn Page</span></div>
+
+<div id="undericona"><img src="index_data/source_pict_index/a_button.png" width="24" height="24" alt="" /></div>
+<div class="undertxt_s">: <span class="select_item">Select Item</span></div>
+
+<span class="bottom_return"><img src="index_data/source_pict_index/back_contents_bar_ukv.png" alt="bottom_return" name="bottom_return" width="123" height="63" id="btn_back" onmouseover="MM_swapImage('btn_back','','index_data/source_pict_index/back_contents_bar_ro_ukv.png',1); wiiFocusSound();" onmouseout="MM_swapImgRestore()" onclick="wiiCancelSound();wiiCloseManual();" /></span></td>
+</tr>
+</table></td>
+</tr>
+</table>
+
+</body>
+</html>
+<!-- Parsetime: 597 ms-->

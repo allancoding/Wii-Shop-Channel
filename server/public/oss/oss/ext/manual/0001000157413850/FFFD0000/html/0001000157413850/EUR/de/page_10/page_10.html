@@ -1,0 +1,261 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta name="copyright" content=" (c) 2008 Nintendo - created by Artwork Services Department - Nintendo of Europe GmbH" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<!-- 
+    copyright Nintendo 2009
+
+	This website is powered by TYPO3 - inspiring people to share!
+	TYPO3 is a free open source Content Management Framework initially created by Kasper Skaarhoj and licensed under GNU/GPL.
+	TYPO3 is copyright 1998-2008 of Kasper Skaarhoj. Extensions are copyright of their respective owners.
+	Information and contribution at http://typo3.com/ and http://typo3.org/
+-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<script type="text/javascript" language="JavaScript" src='../../../../../js/shop.js'></script>
+<script type="text/javascript" language="JavaScript" src='../../../../../js/sound.js'></script>
+<script type="text/javascript" language="JavaScript" src='../../../../../js/images.js'></script>
+<script type="text/javascript" language="JavaScript" src='../../../../../js/manual.js'></script>
+<script type="text/javascript" language="JavaScript" src='../../../../../js/input.js'></script>
+<link href="../common_data/cssfile.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript">
+function hideButton() {
+  if (document.getElementById("maintable") != undefined) {
+    var bodyHeight = document.getElementById("maintable").scrollHeight;
+    if (bodyHeight <= 456) {
+    	 var objBacklink = document.getElementById('backlink');
+    	 if (objBacklink.innerHTML != '') {
+    	 	var elem = document.getElementById("backlink");
+       	elem.innerHTML = '';
+    	 }
+    }
+  } 
+  
+}
+
+function getElementsByClassName(strClass, strTag, objContElm) {
+  strTag = strTag || "*";
+  objContElm = objContElm || document;
+  var objColl = objContElm.getElementsByTagName(strTag);
+  if (!objColl.length &&  strTag == "*" &&  objContElm.all) objColl = objContElm.all;
+  var arr = new Array();
+  var delim = strClass.indexOf('|') != -1  ? '|' : ' ';
+  var arrClass = strClass.split(delim);
+  for (var i = 0, j = objColl.length; i < j; i++) {
+    var arrObjClass = objColl[i].className.split(' ');
+    if (delim == ' ' && arrClass.length > arrObjClass.length) continue;
+    var c = 0;
+    comparisonLoop:
+    for (var k = 0, l = arrObjClass.length; k < l; k++) {
+      for (var m = 0, n = arrClass.length; m < n; m++) {
+        if (arrClass[m] == arrObjClass[k]) c++;
+        if (( delim == '|' && c == 1) || (delim == ' ' && c == arrClass.length)) {
+          arr.push(objColl[i]);
+          break comparisonLoop;
+        }
+      }
+    }
+  }
+  return arr;
+}
+
+
+
+function checkButtonText() {
+  var buttons = getElementsByClassName('contents','div',document);
+  for (i = 0;i < buttons.length; i++) {
+    if (buttons[i].offsetHeight > 30) {
+      buttons[i].setAttribute('class','contents2line',0);
+    }
+  }
+  for (i = 0;i < buttons.length; i++) {
+    if (buttons[i].offsetHeight < 35 && buttons[i].getAttribute('class') == 'contents2line') {
+      buttons[i].setAttribute('style','padding-top: 9px;',0);
+    }
+  }
+  
+}
+
+  </script>
+	<title>11. Basics</title>
+	
+</head>
+<body onkeypress="kpress(false);" onload="initPage();MM_preloadImages(
+'../common_data/CHM_common_source_ro/button_back_ro.png',
+'../common_data/CHM_common_source/button_back.png',
+'../common_data/CHM_common_source_ro/button_next_ro.png',
+'../common_data/CHM_common_source/button_next.png',
+'../common_data/CHM_common_source_ro/button_index_ro.png',
+'../common_data/CHM_common_source/button_index.png',
+'../common_data/CHM_common_source_ro/button_index_top_ro.png',
+'../common_data/CHM_common_source/button_index_top.png');
+checkButtonText();hideButton();">
+
+<table width="100%" height="456" border="0" cellpadding="0" cellspacing="0" id="maintable">
+	<tr>
+		<td align="center" background="../common_data/CHM_common_source/title_top_bar.png">
+			<table width="608" height="79" border="0" cellpadding="0" cellspacing="0">
+				<tr>
+					<td width="90" id="bgpagenumb"><div class="style_number2k">10</div></td>
+					<td width="309"><span class="cms_style_title"><div class="style_title">Grundregeln</div></span></td>
+					<td width="123"><a href="../index.html" target="_parent" onclick="wiiReturnSound()" onmouseover="wiiFocusSound()"><img src="../common_data/CHM_common_source/button_index_top.png" alt="return_top" name="return_top" width="123" height="79" border="0" id="return_top" onmouseover="MM_swapImage('return_top','','../common_data/CHM_common_source_ro/button_index_top_ro.png',1)" onmouseout="MM_swapImgRestore()" /></a></td>
+					<td width="79"></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td height="285" align="center" valign="top">
+			<table width="530" border="0" cellpadding="0" cellspacing="0">
+				<tr align="center">
+				    <td width="478" valign="top" class="frame_margin"><div id="contentContainer">
+	<!--  CONTENT ELEMENT, uid:35170/text [begin] -->
+<div class="style_main">
+        Verwende <img src="../common_data/CHM_common_source/btn_cross.png" align="absmiddle">, um den Organismus zu bewegen. Drücke  
+        <img src="../common_data/CHM_common_source/btn_1key.png" align="absmiddle">, um ihn gegen den oder <img src="../common_data/CHM_common_source/btn_2key.png" align="absmiddle">, um ihn im Uhrzeigersinn zu drehen.
+<ul class="spacer10t">
+        <li>
+        <b>Das Verlängern der Tentakel<br /></b>Einen anderen Organismus mit einem Tentakel oder Körperteil derselben Farbe zu berühren, verlängert das Tentakel. 
+        Es verbessert zudem den Punktestand im <strong>Endlos-</strong> und <strong>Wurm-Modus</strong>. Geschickte Drehbewegungen sind der Schlüssel, um die eigenen 
+        Tentakel mit den passenden Organismen in Berührung zu bringen. 
+        </li>
+        </ul>
+        
+        <img class="spacer10t" src="WA8P_11_01_02.png" alt="" />
+        <ul class="spacer10t">
+          <li>
+        <b>Schaden</b><br />
+        Dein Organismus nimmt Schaden, sobald ein Tentakel oder Körperteil einen Organismus mit einer anderen Farbe berührt. Dies führt dazu, dass du einen Punkt Lebensenergie verlierst und das Tentakel an der Kontaktstelle abbricht.  
+        </p>
+        </li>
+        </ul>
+		<img class="spacer10t" src="WA8P_11_03_04_all.png" width="478" height="133" border="0" alt="" />
+        
+        <div class="spacer10t padding1">
+        <strong>Hinweis:</strong> Nimmt eine Segmentgruppe Schaden, erweitern sich die Segmente auf ihre ursprüngliche Größe, das Tentakel bricht an der Stelle aber nicht ab. Trotzdem verliert dein Organismus einen Punkt Lebensenergie.</div>
+        
+        <ul class="spacer10t">
+        <li>
+        <b>Game Over<br /></b>Verliert dein Organismus alle Lebensenergie-Punkte, endet das Spiel. Wähle dann im <strong>Game Over-Bildschirm</strong> eine der folgenden Optionen.</li>
+        </ul>
+        
+        <table class="table_padding1 spacer10t">
+        <tbody>
+        <tr>
+        <th align="center" scope="row">
+        <b>MENÜ</b>
+        </th>
+        <td>
+        Kehre ins <strong>Hauptmenü</strong> zurück. </td>
+        </tr>
+        <tr>
+        <th align="center" scope="row">
+        <b>ERNEUT</b>
+        </th>
+        <td>
+        Starte diesen Spielmodus oder Level erneut.</td></tr></tbody>
+        </table>
+        
+        <ul class="spacer10t">
+        <li>
+        <b>Extras<br /></b>Die folgenden drei Extras können im Spiel gefunden werden.</li>
+        </ul>
+        
+        <ul class="spacer10t">
+        <li class="small">
+        <b>Herz-Extra<br /></b>
+        <img style="padding-left: 10px; float: right;" src="WA8P_11_05.png" width="124" height="122" alt="" />
+        Das Herz-Extra stellt Lebensenergie wieder her.
+        <div style="clear:both"></div>
+        
+        </li>
+        <li class="small" style="margin-top:10px;">
+        <b>Wirbel-Extra</b>
+        <br />
+        <img style="padding-left: 10px; float: right;" src="WA8P_11_06.png" width="124" height="122" alt="" />
+        Sammelst du ein Wirbel-Extra ein, beginnt eine weiße Energiekugel
+        <img align="absmiddle" src="WA8P_ball_icon.png" width="18" height="18" alt="" /> dich zu umkreisen, was dir wiederum ermöglicht, einen Wirbel zu erzeugen.<br />
+        </li>
+        
+        <li class="small" style="margin-top:10px;">
+        <b>Sammelsegment-Extra</b><br />
+        <b>(nur im Endlos- und Wurm-Modus vorhanden)</b> <br />Sammelsegment-Extras ziehen das Tentakel, das sie berühren, zusammen. 
+        Es gibt drei verschiedene Varianten, die entweder 5, 10 oder 20 Segmente zusammenziehen können.</li>
+        <img class="spacer10t" style="padding-left:20px;" src="WA8P_11_07_08_09.png" alt="" />
+        </li>
+        </ul>
+		
+        <div class="spacer10t">
+		
+            <div style="background-image:url(../common_data/CHM_common_source/kadomaru_ul.png); width:12px; height:12px; float:left;"></div>
+            <div style="border-top:#43B6DF solid 2px; width:454px; float:left;"></div>
+            <div style="background-image:url(../common_data/CHM_common_source/kadomaru_ur.png); width:12px; height:12px; float:left;"></div>
+                  
+            <div style="width:454; border-left:#43B6DF solid 2px; border-right:#43B6DF solid 2px; padding-left:10px; padding-right:10px; margin-right:5px;">
+            
+            <b>Wirbel</b>
+            <br />
+            Wirbel erlauben es deinem Organismus, für einen gewissen Zeitraum alle Organismen zu absorbieren, die er berührt. Finde ein Wirbel-Extra und folge den 
+            unten aufgeführten Schritten, um einen Wirbel zu erzeugen.
+    
+            <ul class="spacer10t">
+            <li class="numb1">
+            <img style="padding-left: 10px; float: right;" src="WA8P_11_10.png" alt="" />
+            Halte 
+            <img src="../common_data/CHM_common_source/btn_1key.png" align="absmiddle"> oder 
+            <img src="../common_data/CHM_common_source/btn_2key.png" align="absmiddle"> gedrückt, 
+            um dich möglichst ohne Pause zu drehen, und baue auf diese Weise Wirbel-Energie auf.
+            
+            
+            <div class="spacer10t">
+            <strong>Hinweis:</strong> Wirbel-Energie geht verloren, wenn dein Organismus Schaden nimmt, bevor der Wirbel bereit ist. Halte einen der Knöpfe erneut gedrückt, 
+            um noch einmal Wirbel-Energie aufzubauen. </div>
+            </li>
+            <li class="numb2" style="margin-top:10px;">
+            <img style="padding-left: 10px; float: right;" src="WA8P_11_11.png" width="212" height="134" alt="" />
+            Konzentriert sich die Wirbel-Energie um deinen Organismus, kannst du den Knopf loslassen, um auf diese Weise den Wirbel zu erzeugen.
+            </li>
+            
+            <li class="numb3" style="margin-top:10px;">
+            <img style="padding-left: 10px; float: right;" src="WA8P_11_12.png" width="212" height="134" alt="" />
+            Alle während eines Wirbels berührten Organismen werden absorbiert. Nach einer gewissen Zeit endet der Wirbel und die Anzahl der absorbierten Organismen wird den passenden Tentakeln hinzugefügt.</li>
+            </ul>
+            
+            </div>
+            
+            <div style="background-image:url(../common_data/CHM_common_source/kadomaru_dl.png); width:12px; height:12px; float:left;"></div>
+            <div style="border-bottom:#43B6DF solid 2px; width:454px; float:left; height:10px;"></div>
+            <div style="background-image:url(../common_data/CHM_common_source/kadomaru_dr.png); width:12px; height:12px; float:left;"></div>   
+   		
+        </div>
+		
+</div>
+        </td>
+				    <td width="52" valign="top"></td>
+				  </tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td height="60" align="center">
+			<table width="550" border="0" align="center" cellpadding="0" cellspacing="0">
+				<tr>
+					<td width="152" align="left" id="prev"><a href="../page_09/page_09.html" onfocus="blurLink(this);"  target="_parent" onclick="wiiLeftScroll()" onmouseover="wiiFocusSound()"><img src="../common_data/CHM_common_source/button_back.png" alt="back" name="foot_back" width="152" height="54" vspace="3" border="0" id="foot_back" onmouseover="MM_swapImage('foot_back','','../common_data/CHM_common_source_ro/button_back_ro.png',1)" onmouseout="MM_swapImgRestore()" /></a></td>
+					<td width="196" align="center" id="backlink"><a onmouseover="wiiFocusSound()" onclick="wiiReturnSound()" target="_parent" href="../index.html" ><img src="../common_data/CHM_common_source/button_index.png" alt="return" name="return_index" width="152" height="54" vspace="3" border="0" id="return_index" onmouseover="MM_swapImage('return_index','','../common_data/CHM_common_source_ro/button_index_ro.png',1)" onmouseout="MM_swapImgRestore()" /></a></td>
+					<td width="152" align="right" id="next"><a href="../page_11/page_11.html" onfocus="blurLink(this);"  target="_parent" onclick="wiiRightScroll()" onmouseover="wiiFocusSound()"><img src="../common_data/CHM_common_source/button_next.png" alt="next" name="foot_next" width="152" height="54" vspace="3" border="0" id="foot_next" onmouseover="MM_swapImage('foot_next','','../common_data/CHM_common_source_ro/button_next_ro.png',1)" onmouseout="MM_swapImgRestore()" /></a></td>
+					<td width="50"></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td height="32" background="../common_data/CHM_common_source/common_bottom.png"></td>
+	</tr>
+</table>
+
+</body>
+</html>
+<!-- Parsetime: 556 ms-->

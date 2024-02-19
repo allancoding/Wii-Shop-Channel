@@ -1,0 +1,45 @@
+@charset "UTF-8";
+/*common*/
+body {
+	margin:0;
+	padding:0;
+	background-color: #ffffff;
+	font-family:"Wii NTLG PGothic Regular";
+}
+
+table,tr,th,td,thead,tbody,tfoot {margin:0;padding:0; border:none; border-spacing:0; font-weight:normal;border-collapse:collapse;}
+
+/*index style*/
+#title			{text-align:left; margin:26px 0 0 25px;font-size:30px;color:#ffffff;}
+#display		{text-align:left;padding-left:28px;font-size:19px;font-weight:normal;color:#333333;}
+
+.contents		{font-size: 19px;color: #333333;line-height:normal;padding-bottom:3px;text-align:left;}
+.contents2line	{font-size: 17px;color: #333333;line-height:18px;padding-bottom:3px;text-align:left;}
+
+.midasi1		{width:516px;height:36px;margin:10px 0 3px;}
+.midasi2		{width:516px;height:36px;margin:20px 0 3px;}
+
+.midasi_txt		{font-size:22px;font-weight:bold;color:#43B6DF;line-height:36px;text-align:left;}
+
+.number			{font-size: 22px;color: #333333;font-weight: bold;text-align:center;}
+
+.menutable		{padding:0 25px;}
+
+.button {
+	padding-top: 2px;
+	width: 260px;
+	height: 54px;
+	background-image: url(source_pict_index/index_button.png);
+}
+
+#undericonapage		{padding-top:2px; margin-left:20px; margin-right:2px;}
+#undericonbpage		{padding-top:2px; margin-left:12px; margin-right:2px;}
+#undericona			{padding-top:2px; margin-left:12px; margin-right:1px;}
+.undertxt			{font-size: 19px; font-weight:normal;color: #333333; vertical-align:7px;}
+
+.copyright			{font-size:19px;color:#333333;line-height:normal;text-align:center;}
+
+#content {
+	height:292px;
+	overflow:auto;
+}

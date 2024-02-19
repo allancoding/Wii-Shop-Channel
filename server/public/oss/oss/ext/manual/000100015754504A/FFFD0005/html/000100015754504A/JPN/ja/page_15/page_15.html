@@ -1,0 +1,290 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>15 みんなでテトリス</title>
+<script type="text/javascript" language="JavaScript" src='../../../../../js/shop.js'></script>
+<script type="text/javascript" language="JavaScript" src='../../../../../js/sound.js'></script>
+<script type="text/javascript" language="JavaScript" src='../../../../../js/images.js'></script>
+<script type="text/javascript" language="JavaScript" src='../../../../../js/manual.js'></script>
+<script type="text/javascript" language="JavaScript" src='../../../../../js/input.js'></script>
+<link href="../common_data/cssfile.css" rel="stylesheet" type="text/css" />
+</head>
+<body onkeypress="kpress(false);" onload="initPage(); MM_preloadImages(
+	'../common_data/CHM_common_source_ro/common_button_back_ro.png',
+	'../common_data/CHM_common_source_ro/common_button_next_ro.png',
+	'../common_data/CHM_common_source_ro/common_button_index_ro.png',
+	'../common_data/CHM_common_source_ro/return_index_button_ro.png')">
+<table width="99%" height="456" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td align="center" background="../common_data/CHM_common_source/title_top_bar.png"><table width="608" height="79" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td width="90" id="bgpagenumb"><div class="style_number2k">15</div></td>
+<td width="309"><div class="style_title">みんなでテトリス</div></td>
+<td width="130"><a href="../index.html" target="_parent" onclick="wiiReturnSound()" onmouseover="wiiFocusSound()"><img src="../common_data/CHM_common_source/return_index_button.png" alt="return_top" name="return_top" width="130" height="79" border="0" id="return_top" onmouseover="MM_swapImage('return_top','','../common_data/CHM_common_source_ro/return_index_button_ro.png',1)" onmouseout="MM_swapImgRestore()" /></a></td>
+<td width="79"></td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<td height="285" align="center" valign="top"><table width="530" border="0" cellpadding="0" cellspacing="0">
+<tr align="center">
+<td width="478" valign="top" class="frame_margin">
+
+<table width="478" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#43B6DF" >
+<tr>
+<td width="5" valign="top"><img src="../common_data/CHM_common_source/heading_tl.gif" width="5" height="5" /></td>
+<td></td>
+<td width="5" valign="top"><img src="../common_data/CHM_common_source/heading_tr.gif" width="5" height="5" /></td>
+</tr>
+<tr>
+<td valign="top"></td>
+<td width="468" valign="top" class="style_bar">VSバトル</td>
+<td valign="top"></td>
+<tr>
+<td valign="top">
+<img src="../common_data/CHM_common_source/heading_bl.gif" width="5" height="5" /></td>
+<td valign="top"></td>
+<td valign="top">
+<img src="../common_data/CHM_common_source/heading_br.gif" width="5" height="5" /></td>
+</tr>
+</table>
+
+<div class="style_main spacer10t">
+<img src="minnade_01.png" width="207" height="163" style="margin:0 0 0 10px;float:right;" />基本的な対戦ルールのテトリスです。ライバルや<img src="../common_data/CHM_common_source/spacer.png" width="3" height="3" />COM<img src="../common_data/CHM_common_source/spacer.png" width="3" height="3" />とラインを消し合い、自分以外のプレイヤーを全て行動不能<img src="../common_data/CHM_common_source/spacer.png" width="5" height="3" />(ゲームオーバー)<img src="../common_data/CHM_common_source/spacer.png" width="5" height="3" />にすれば勝ち、ライバルが先に行動不能になっても勝ちとなります。ラインを消すと、消したライン数に応じて相手のフィールドにペナルティブロックを送ることができます。</div>
+
+<table width="478" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#43B6DF" class="spacer30t">
+<tr>
+<td width="5" valign="top"><img src="../common_data/CHM_common_source/heading_tl.gif" width="5" height="5" /></td>
+<td></td>
+<td width="5" valign="top"><img src="../common_data/CHM_common_source/heading_tr.gif" width="5" height="5" /></td>
+</tr>
+<tr>
+<td valign="top"></td>
+<td width="468" valign="top" class="style_bar">VSのぼってブロック</td>
+<td valign="top"></td>
+<tr>
+<td valign="top">
+<img src="../common_data/CHM_common_source/heading_bl.gif" width="5" height="5" /></td>
+<td valign="top"></td>
+<td valign="top">
+<img src="../common_data/CHM_common_source/heading_br.gif" width="5" height="5" /></td>
+</tr>
+</table>
+
+<div class="style_main spacer10t">
+<img src="minnade_02.png" width="207" height="163" style="margin:0 0 0 10px;float:right;" />基本的なルールは「のぼってブロック」と同じです。ライバルより先にゴールすると勝ち、ライバルが先に行動不能になっても勝ちとなります。チェックポイントを通るたびに「ラインキック」が１つ補充されます。</div>
+
+<table width="478" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#43B6DF" class="spacer30t">
+<tr>
+<td width="5" valign="top"><img src="../common_data/CHM_common_source/heading_tl.gif" width="5" height="5" /></td>
+<td></td>
+<td width="5" valign="top"><img src="../common_data/CHM_common_source/heading_tr.gif" width="5" height="5" /></td>
+</tr>
+<tr>
+<td valign="top"></td>
+<td width="468" valign="top" class="style_bar">VSホットライン</td>
+<td valign="top"></td>
+<tr>
+<td valign="top">
+<img src="../common_data/CHM_common_source/heading_bl.gif" width="5" height="5" /></td>
+<td valign="top"></td>
+<td valign="top">
+<img src="../common_data/CHM_common_source/heading_br.gif" width="5" height="5" /></td>
+</tr>
+</table>
+
+<div class="style_main spacer10t">
+<img src="minnade_03.png" width="207" height="163" style="margin:0 0 0 10px;float:right;" />指定された緑色のラインを消して行きます。ライン上でテトリミノを消すと、背後のラインも一緒に消えます。ライバルより先に全てのラインを消せば勝ち、ライバルが先に行動不能になっても勝ちとなります。チームを組んでいる場合、チームメイトがラインを消すと、同じ場所にある自分のラインも消えます。</div>
+
+<table width="478" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#43B6DF" class="spacer30t">
+<tr>
+<td width="5" valign="top"><img src="../common_data/CHM_common_source/heading_tl.gif" width="5" height="5" /></td>
+<td></td>
+<td width="5" valign="top"><img src="../common_data/CHM_common_source/heading_tr.gif" width="5" height="5" /></td>
+</tr>
+<tr>
+<td valign="top"></td>
+<td width="468" valign="top" class="style_bar">VSえあわせブロック</td>
+<td valign="top"></td>
+<tr>
+<td valign="top">
+<img src="../common_data/CHM_common_source/heading_bl.gif" width="5" height="5" /></td>
+<td valign="top"></td>
+<td valign="top">
+<img src="../common_data/CHM_common_source/heading_br.gif" width="5" height="5" /></td>
+</tr>
+</table>
+
+<div class="style_main spacer10t">
+<img src="minnade_04.png" width="207" height="163" style="margin:0 0 0 10px;float:right;" />基本的なルールは「えあわせブロック」と同じです。ゲーム終了時にライバルより完成度が高ければ勝ち、100％の完成度を出したプレイヤーはその時点で勝ちとなります。</div>
+
+<table width="478" border="0" align="center" cellpadding="0" cellspacing="0" class="spacer20t">
+<tr>
+<td width="12" height="12"><img src="../common_data/CHM_common_source/kadomaru_ul_gray.png" width="12" height="12" /></td>
+<td width="454" height="12"><img src="../common_data/CHM_common_source/kadomaru_line_u_gray.png" width="454" height="12" /></td>
+<td width="12" height="12"><img src="../common_data/CHM_common_source/kadomaru_ur_gray.png" width="12" height="12" /></td>
+</tr>
+<tr>
+<td width="12" background="../common_data/CHM_common_source/kadomaru_line_l_gray.png"><img src="../common_data/CHM_common_source/kadomaru_line_l.png" width="12" height="1" /></td>
+<td>
+
+<div class="style_main_s">
+<img src="tetris_skip_2.png" width="101" height="87" align="left" style=" margin-right:10px;"/>
+<p class="caution_s1"><strong>&nbsp;【SKIP表示】</strong></p>
+<p class="spacer5t">ここに表示された回数だけテトリミノを交換することができます。</p>
+</div>
+
+</td>
+<td width="12" background="../common_data/CHM_common_source/kadomaru_line_r_gray.png"><img src="../common_data/CHM_common_source/kadomaru_line_r.png" width="12" height="1" /></td>
+</tr>
+<tr>
+<td width="12" height="12"><img src="../common_data/CHM_common_source/kadomaru_dl_gray.png" width="12" height="12" /></td>
+<td width="454" height="12"><img src="../common_data/CHM_common_source/kadomaru_line_d_gray.png" width="454" height="12" /></td>
+<td width="12" height="12"><img src="../common_data/CHM_common_source/kadomaru_dr_gray.png" width="12" height="12" /></td>
+</tr>
+</table>
+
+<table width="478" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#43B6DF" class="spacer30t">
+<tr>
+<td width="5" valign="top"><img src="../common_data/CHM_common_source/heading_tl.gif" width="5" height="5" /></td>
+<td></td>
+<td width="5" valign="top"><img src="../common_data/CHM_common_source/heading_tr.gif" width="5" height="5" /></td>
+</tr>
+<tr>
+<td valign="top"></td>
+<td width="468" valign="top" class="style_bar">VSコースをすすめ</td>
+<td valign="top"></td>
+<tr>
+<td valign="top">
+<img src="../common_data/CHM_common_source/heading_bl.gif" width="5" height="5" /></td>
+<td valign="top"></td>
+<td valign="top">
+<img src="../common_data/CHM_common_source/heading_br.gif" width="5" height="5" /></td>
+</tr>
+</table>
+
+<div class="style_main spacer10t">
+<img src="minnade_05.png" width="207" height="163" style="margin:0 0 0 10px;float:right;" />基本的なルールは「コースをすすめ」と同じです。ライバルより先にゴールにたどり着けば勝ち、ライバルが先に行動不能になっても勝ちとなります。</div>
+
+<table width="478" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#43B6DF" class="spacer30t">
+<tr>
+<td width="5" valign="top"><img src="../common_data/CHM_common_source/heading_tl.gif" width="5" height="5" /></td>
+<td></td>
+<td width="5" valign="top"><img src="../common_data/CHM_common_source/heading_tr.gif" width="5" height="5" /></td>
+</tr>
+<tr>
+<td valign="top"></td>
+<td width="468" valign="top" class="style_bar">きょうりょくテトリス</td>
+<td valign="top"></td>
+<tr>
+<td valign="top">
+<img src="../common_data/CHM_common_source/heading_bl.gif" width="5" height="5" /></td>
+<td valign="top"></td>
+<td valign="top">
+<img src="../common_data/CHM_common_source/heading_br.gif" width="5" height="5" /></td>
+</tr>
+</table>
+
+<div class="style_main spacer10t">
+<img src="minnade_06.png" width="207" height="163" style="margin:0 0 0 10px;float:right;" />２人プレイ専用です。通常の倍の横幅<img src="../common_data/CHM_common_source/spacer.png" width="5" height="3" />(20ブロック)<img src="../common_data/CHM_common_source/spacer.png" width="5" height="3" />を持つフィールドで、２人が協力してプレイします。１Ｐと２Ｐでエントリーされるテトリミノの種類は異なりますが、基本的なルールは通常のテトリスと同じです。HOLD<img src="../common_data/CHM_common_source/spacer.png" width="5" height="3" />は１Ｐと２Ｐで共用です。</div>
+
+<table width="478" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#43B6DF" class="spacer30t">
+<tr>
+<td width="5" valign="top"><img src="../common_data/CHM_common_source/heading_tl.gif" width="5" height="5" /></td>
+<td></td>
+<td width="5" valign="top"><img src="../common_data/CHM_common_source/heading_tr.gif" width="5" height="5" /></td>
+</tr>
+<tr>
+<td valign="top"></td>
+<td width="468" valign="top" class="style_bar">かこんでスペース</td>
+<td valign="top"></td>
+<tr>
+<td valign="top">
+<img src="../common_data/CHM_common_source/heading_bl.gif" width="5" height="5" /></td>
+<td valign="top"></td>
+<td valign="top">
+<img src="../common_data/CHM_common_source/heading_br.gif" width="5" height="5" /></td>
+</tr>
+</table>
+
+<div class="style_main spacer10t">
+<img src="minnade_07.png" width="207" height="163" style="margin:0 0 0 10px;float:right;" />２人プレイ専用です。通常の倍の横幅<img src="../common_data/CHM_common_source/spacer.png" width="5" height="3" />(20ブロック)<img src="../common_data/CHM_common_source/spacer.png" width="5" height="3" />を持つフィールドで対決します。通常のテトリスとはルールが大きく異なり、テトリミノで囲んだスペースの広さ<img src="../common_data/CHM_common_source/spacer.png" width="5" height="3" />(テトリミノ自体もスペースとしてカウント)<img src="../common_data/CHM_common_source/spacer.png" width="5" height="3" />を競います。プレイヤーは１手ずつ交互にテトリミノを操作して行きます。スペースは最後にそのスペースを閉じた方のものとなり、より広いスペースを所有する方が勝ちとなります。</div>
+
+<table width="478" border="0" align="center" cellpadding="0" cellspacing="0" class="spacer30t">
+<tr>
+<td width="12" height="12"><img src="../common_data/CHM_common_source/kadomaru_ul_gray.png" width="12" height="12" /></td>
+<td width="454" height="12"><img src="../common_data/CHM_common_source/kadomaru_line_u_gray.png" width="454" height="12" /></td>
+<td width="12" height="12"><img src="../common_data/CHM_common_source/kadomaru_ur_gray.png" width="12" height="12" /></td>
+</tr>
+<tr>
+<td width="12" background="../common_data/CHM_common_source/kadomaru_line_l_gray.png"><img src="../common_data/CHM_common_source/kadomaru_line_l.png" width="12" height="1" /></td>
+<td>
+<div class="style_main_s">
+<p align="center"><strong>【セーブについて】</strong></p>
+<p class="spacer10t">「みんなでテトリス」モードでは、参加するプレイヤー全員が、それぞれ自分のデータに記録や成績をセーブすることができます。次の手順でセーブデータを選択してください。</p>
+</div>
+
+<img src="../common_data/CHM_common_source/kadomaru_line_u_gray.png" width="454" height="5" class="spacer20t"/>
+<table width="454" border="0" cellpadding="0" cellspacing="0" class="spacer10t">
+<tr>
+<td valign="top" class="style_main_s">
+
+<div class="style_main_s">
+<ol>
+<li>プレイヤーセレクト画面で該当するプレイヤー番号のメニューバーにカーソルを合わせます。</li>
+<img src="../common_data/CHM_common_source/spacer.png" width="5" height="10" />
+<li><img src="../common_data/CHM_common_source/control_pad_small.gif" width="22" height="22" hspace="1" align="absmiddle" />左右で「MAN」を選び<img src="../common_data/CHM_common_source/2_button_remote.gif" width="22" height="22" hspace="1" align="absmiddle" />を押します。</li>
+</ol>
+</div>
+
+</td>
+<td valign="top" align="center"><img src="PlayerSelect.png" width="207" height="163" align="right" style="margin-left: 5px"/> </td>
+</tr>
+<tr>
+<td colspan="2" valign="top" class="style_main_s">
+
+<div class="style_main_s spacer10t">
+<ol start="3">
+<li>データセレクト画面に移ったら、自分のセーブデータを選び<img src="../common_data/CHM_common_source/2_button_remote.gif" width="22" height="22" hspace="1" align="absmiddle" />を押します。</li>
+<img src="../common_data/CHM_common_source/spacer.png" width="5" height="10" />
+<li>再びプレイヤーセレクト画面に戻ると、セーブデータ名がメニューバーに表示され適用されます。</li>
+</ol>
+</div>
+
+</td>
+</tr>
+</table>
+<img src="../common_data/CHM_common_source/kadomaru_line_u_gray.png" width="454" height="5" class="spacer20t"/>
+<div class="style_main_s spacer10t">
+<p>プレイヤーを「GUEST」に設定すると、そのプレイヤーのデータにはセーブされません。「COM」にするとコンピュータが代わりにゲームに参加し、「OFF」にすると参加できません。(参加人数が減ります）</p>
+</div></td>
+<td width="12" background="../common_data/CHM_common_source/kadomaru_line_r_gray.png"><img src="../common_data/CHM_common_source/kadomaru_line_r.png" width="12" height="1" /></td>
+</tr>
+<tr>
+<td width="12" height="12"><img src="../common_data/CHM_common_source/kadomaru_dl_gray.png" width="12" height="12" /></td>
+<td width="454" height="12"><img src="../common_data/CHM_common_source/kadomaru_line_d_gray.png" width="454" height="12" /></td>
+<td width="12" height="12"><img src="../common_data/CHM_common_source/kadomaru_dr_gray.png" width="12" height="12" /></td>
+</tr>
+</table>
+
+</td>
+<td width="52" valign="top"></td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<td height="60" align="center"><table width="550" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td width="152" align="left"><a href="../page_14/page_14.html" target="_parent" onclick="wiiLeftScroll()" onmouseover="wiiFocusSound()"><img src="../common_data/CHM_common_source/common_button_back.png" alt="back" name="foot_back" width="152" height="54" vspace="3" border="0" id="foot_back" onmouseover="MM_swapImage('foot_back','','../common_data/CHM_common_source_ro/common_button_back_ro.png',1)" onmouseout="MM_swapImgRestore()" /></a></td>
+<td width="196" align="center"><a href="../index.html" target="_parent" onclick="wiiReturnSound()" onmouseover="wiiFocusSound()"><img src="../common_data/CHM_common_source/common_button_index.png" alt="return" name="return_index" width="152" height="54" vspace="3" border="0" id="return_index" onmouseover="MM_swapImage('return_index','','../common_data/CHM_common_source_ro/common_button_index_ro.png',1)" onmouseout="MM_swapImgRestore()" /></a></td>
+<td width="152" align="right"><a href="../page_16/page_16.html" target="_parent" onclick="wiiRightScroll()" onmouseover="wiiFocusSound()"><img src="../common_data/CHM_common_source/common_button_next.png" alt="next" name="foot_next" width="152" height="54" vspace="3" border="0" id="foot_next" onmouseover="MM_swapImage('foot_next','','../common_data/CHM_common_source_ro/common_button_next_ro.png',1)" onmouseout="MM_swapImgRestore()" /></a></td>
+<td width="50"></td>
+</tr>
+</table></td></tr>
+<tr>
+<td height="32" background="../common_data/CHM_common_source/common_bottom.png"></td>
+</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,72 @@
+@charset "UTF-8";
+/*common*/
+body {
+	margin:0;
+	padding:0;
+	background-color: #ffffff;
+	font-family:"Wii NTLG PGothic";
+}
+
+table,tr,th,td,thead,tbody,tfoot {margin:0;padding:0; border:none; border-spacing:0; font-weight:normal;border-collapse:collapse;}
+
+/*index style*/
+#title			{text-align:left; margin:28px 0 0 27px;font-size:36px;color: #43B6DF;}
+
+/*#display		{font-size:22px; font-weight:bold;color: #ffffff; padding:8px 0 0 40px; float:left; width:3em; }*/
+
+.number			{font-size: 22px;color: #333333;font-weight: bold; float:left; text-align:center; padding-top:10px; width:55px; height:54px;}
+.contents		{font-size: 19px;color: #333333;line-height:normal;padding-top:12px;text-align:left;}
+.contents2line	{font-size: 17px;color: #333333;line-height:18px;padding-top:8px;text-align:left; width:240px;}
+
+.header_GameTitle {font-size:36;font-weight:bold;color:#43B6DF;line-height:36px;text-align:left;}
+.midasi1		{width:516px;height:36px;margin:10px 0px 3px 16px;}
+.midasi2		{width:516px;height:36px;margin:20px 0px 3px 0px;}
+
+.midasi_txt		{font-size:22px;font-weight:bold;color:#43B6DF;line-height:36px;text-align:left;}
+
+/*.menu_number	{font-size:16px;font-weight:bold;color:#666666;padding-left:12px;padding-right:18px;padding-bottom:5px;}
+.menu_number2k	{font-size:16px;font-weight:bold;color:#666666;padding-left:5px;padding-right:13px;}*/
+
+
+/*Neue klasse für LI*/
+
+ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	float:left;
+	border:0px solid #000;
+	width:530px;
+}
+
+li {
+	width: 250px;
+	margin: 0 0px 3px 0;
+	text-align:left;
+	float:left;
+}
+
+.menutable{padding:0 25px; width: 520px; border:0px solid #000;}
+
+.button {
+	padding-top: 2px;
+	width: 260px;
+	height: 54px;
+	float:left;
+	background-image: url(source_pict_index/index_button.png);
+}
+
+#undericonplus		{padding-top:8px; margin-left:40px; margin-right:2px; float:left;}
+#undericona			{padding-top:8px; margin-left:12px; margin-right:2px; float:left;}
+#undericonbpage		{padding-top:8px; margin-left:12px; margin-right:2px; float:left;}
+/*.undertxtplus		{font-size: 16px; font-weight:bold;color: #ffffff; vertical-align:7px; padding:0 2px;}*/
+
+.undertxt			{font-size: 16px; font-weight:bold;color: #ffffff; padding-top:10px;float:left;}
+.undertxt_s			{font-size: 14px; font-weight:bold;color: #ffffff; padding-top:10px;float:left;}
+
+#btn_back { float:right; margin-right:40px;}
+
+#content {
+	height: 292px;
+	overflow: auto;
+}

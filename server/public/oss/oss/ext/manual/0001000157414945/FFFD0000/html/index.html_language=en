@@ -1,0 +1,41 @@
+<!-- saved from url=(0022)http://internet.e-mail -->
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script language="JavaScript" src='../js/query.js'></script>
+<script language="JavaScript" src='../js/index.js'></script>
+<script type="text/javascript">
+function jumpIndex() {
+      // Get country/language/region from URL parameters
+      var qs = new Querystring();
+      // country is 2-letter country code (e.g. JP, US)
+      var country = qs.get("country");
+      // language is 2-letter language code (e.g ja, en)
+      var language = qs.get("language");
+      // region is 3-letter region for country (e.g. JPN, USA, EUR, AUS)
+      var region = qs.get("region");
+      // titleId is 16-digit hex titleId
+      var titleId = qs.get("titleId");
+      // convert titleId to uppercase
+      var upperTitleId = titleId.toUpperCase();
+
+      var manp = qs.get("p");
+
+      // TODO: validate jump point is good
+      // Decide on entry point depending on country/language/region
+      entry = upperTitleId + "/" + region + "/" + language + "/index.html?language=" + language +"&country=" + country +"&region=" + region +"&p=" + manp;
+
+      // Switch to appropriate entry point
+      jump(entry);
+}
+
+</script>
+</head>
+
+<body onload="jumpIndex()">
+</body>
+
+</html>
+

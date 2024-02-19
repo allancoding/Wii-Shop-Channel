@@ -1,0 +1,231 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta name="copyright" content=" (c) 2008 Nintendo - created by Artwork Services Department - Nintendo of Europe GmbH" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<!-- 
+    copyright Nintendo 2009
+
+	This website is powered by TYPO3 - inspiring people to share!
+	TYPO3 is a free open source Content Management Framework initially created by Kasper Skaarhoj and licensed under GNU/GPL.
+	TYPO3 is copyright 1998-2008 of Kasper Skaarhoj. Extensions are copyright of their respective owners.
+	Information and contribution at http://typo3.com/ and http://typo3.org/
+-->
+
+	
+	<link rel="stylesheet" type="text/css" href="/typo3temp/stylesheet_44f2ec0479.css" />
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<script type="text/javascript" language="JavaScript" src='../../../../../js/shop.js'></script>
+<script type="text/javascript" language="JavaScript" src='../../../../../js/sound.js'></script>
+<script type="text/javascript" language="JavaScript" src='../../../../../js/images.js'></script>
+<script type="text/javascript" language="JavaScript" src='../../../../../js/manual.js'></script>
+<script type="text/javascript" language="JavaScript" src='../../../../../js/input.js'></script>
+<link href="../common_data/cssfile.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript">
+function hideButton() {
+  if (document.getElementById("maintable") != undefined) {
+    var bodyHeight = document.getElementById("maintable").scrollHeight;
+    if (bodyHeight <= 456) {
+    	 var objBacklink = document.getElementById('backlink');
+    	 if (objBacklink.innerHTML != '') {
+    	 	var elem = document.getElementById("backlink");
+       	elem.innerHTML = '';
+    	 }
+    }
+  } 
+  
+}
+
+function getElementsByClassName(strClass, strTag, objContElm) {
+  strTag = strTag || "*";
+  objContElm = objContElm || document;
+  var objColl = objContElm.getElementsByTagName(strTag);
+  if (!objColl.length &&  strTag == "*" &&  objContElm.all) objColl = objContElm.all;
+  var arr = new Array();
+  var delim = strClass.indexOf('|') != -1  ? '|' : ' ';
+  var arrClass = strClass.split(delim);
+  for (var i = 0, j = objColl.length; i < j; i++) {
+    var arrObjClass = objColl[i].className.split(' ');
+    if (delim == ' ' && arrClass.length > arrObjClass.length) continue;
+    var c = 0;
+    comparisonLoop:
+    for (var k = 0, l = arrObjClass.length; k < l; k++) {
+      for (var m = 0, n = arrClass.length; m < n; m++) {
+        if (arrClass[m] == arrObjClass[k]) c++;
+        if (( delim == '|' && c == 1) || (delim == ' ' && c == arrClass.length)) {
+          arr.push(objColl[i]);
+          break comparisonLoop;
+        }
+      }
+    }
+  }
+  return arr;
+}
+
+
+
+function checkButtonText() {
+  var buttons = getElementsByClassName('contents','div',document);
+  for (i = 0;i < buttons.length; i++) {
+    if (buttons[i].offsetHeight > 30) {
+      buttons[i].setAttribute('class','contents2line',0);
+    }
+  }
+  for (i = 0;i < buttons.length; i++) {
+    if (buttons[i].offsetHeight < 35 && buttons[i].getAttribute('class') == 'contents2line') {
+      buttons[i].setAttribute('style','padding-top: 9px;',0);
+    }
+  }
+  
+}
+
+  </script>
+	<title>3. Internet Precautions</title>
+	
+	<script type="text/javascript" src="/typo3temp/javascript_93077bb238.js"></script>
+
+</head>
+<body onkeypress="kpress(false);" onload="initPage();MM_preloadImages(
+'../common_data/CHM_common_source_ro/button_back_ro_ukv.png',
+'../common_data/CHM_common_source/button_back_ukv.png',
+'../common_data/CHM_common_source_ro/button_next_ro_ukv.png',
+'../common_data/CHM_common_source/button_next_ukv.png',
+'../common_data/CHM_common_source_ro/button_index_ro_ukv.png',
+'../common_data/CHM_common_source/button_index_ukv.png',
+'../common_data/CHM_common_source_ro/button_index_top_ro_ukv.png',
+'../common_data/CHM_common_source/button_index_top_ukv.png');
+checkButtonText();hideButton();">
+
+<table width="100%" height="456" border="0" cellpadding="0" cellspacing="0" id="maintable">
+	<tr>
+		<td align="center" background="../common_data/CHM_common_source/title_top_bar.png">
+			<table width="608" height="79" border="0" cellpadding="0" cellspacing="0">
+				<tr>
+					<td width="90" id="bgpagenumb"><div class="style_number">3</div></td>
+					<td width="309"><span class="cms_style_title"><div class="style_title">Internet Precautions</div></span></td>
+					<td width="123"><a href="../index.html" target="_parent" onclick="wiiReturnSound()" onmouseover="wiiFocusSound()"><img src="../common_data/CHM_common_source/button_index_top_ukv.png" alt="return_top" name="return_top" width="123" height="79" border="0" id="return_top" onmouseover="MM_swapImage('return_top','','../common_data/CHM_common_source_ro/button_index_top_ro_ukv.png',1)" onmouseout="MM_swapImgRestore()" /></a></td>
+					<td width="79"></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td height="285" align="center" valign="top">
+			<table width="530" border="0" cellpadding="0" cellspacing="0">
+				<tr align="center">
+				    <td width="478" valign="top" class="frame_margin"><div id="contentContainer">
+	<!--  CONTENT ELEMENT, uid:35765/list [begin] -->
+		<div class="style_main"> <a id="c35765"></a>
+		<!--  Plugin inserted: [begin] -->
+			
+
+
+	<!--
+
+		BEGIN: Content of extension "wwm_ip", plugin "tx_wwmip_pi1"
+
+	-->
+	<div class="tx-wwmip-pi1">
+		<table align="center" bgcolor="#43b6df" border="0" cellpadding="0" cellspacing="0" width="478">
+<tbody><tr>
+<td valign="top" width="5"><img src="../common_data/CHM_common_source/heading_tl.png" height="5" width="5"></td>
+<td>
+</td><td valign="top" width="5"><img src="../common_data/CHM_common_source/heading_tr.png" height="5" width="5"></td>
+</tr>
+<tr>
+<td valign="top">
+</td><td class="style_bar" valign="top" width="468">General Precautions</td>
+<td valign="top">
+</td></tr>
+<tr>
+<td valign="top"><img src="../common_data/CHM_common_source/heading_bl.png" height="5" width="5"></td>
+<td valign="top">
+</td><td valign="top"><img src="../common_data/CHM_common_source/heading_br.png" height="5" width="5"></td>
+</tr>
+</tbody></table>
+<div class="spacer10tu">
+<div class="style_main">
+To protect your privacy, we advise that you do not give out personal information such as your last name, phone number, date of birth, age, school, e-mail, or home address when communicating with others.</div>
+</div>
+
+<div class="spacer10tu">
+<div class="style_main">
+<p >The Wii Network Services Agreement that governs Wii online game play and sets forth the Wii Network Services Privacy Policy and Wii Code of Conduct is available in the Wii console's System Settings and online at <nobr>
+http://wii.nintendo-europe.com/terms</nobr></p>
+</div>
+</div><div class="spacer20t"></div><table width="478" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#43B6DF">
+<tr>
+<td width="5" valign="top"><img src="../common_data/CHM_common_source/heading_tl.png" width="5" height="5" /></td>
+<td></td>
+<td width="5" valign="top"><img src="../common_data/CHM_common_source/heading_tr.png" width="5" height="5" /></td>
+</tr>
+<tr>
+<td valign="top"></td>
+<td width="468" valign="top" class="style_bar">Precautions for Downloading Add-On Content for Nintendo Wi-Fi Connection Pay &amp; Play</td>
+<td valign="top"></td>
+</tr>
+<tr>
+<td valign="top"><img src="../common_data/CHM_common_source/heading_bl.png" width="5" height="5" /></td>
+<td valign="top"></td>
+<td valign="top"><img src="../common_data/CHM_common_source/heading_br.png" width="5" height="5" /></td>
+</tr>
+</table>
+
+<div class="spacer10tu">
+<div class="style_main">This game allows you to connect to the internet and download add-on content (such as data or services) using Wii Points. Keep the following in mind when purchasing licences for add-on content:</div>
+</div>
+
+<div class="spacer30bu">
+<div class="style_main">
+<p class="caution0"><span class="style_main_xs" style="vertical-align:middle;">●</span>&nbsp;The download of add-on content is governed by the Wii Network Services Agreement, including the Wii Shop Channel Agreement. For more details please check <nobr>http://wii.nintendo-europe.com/terms</nobr></p>
+
+<p class="caution0"><span class="style_main_xs" style="vertical-align:middle;">●</span>&nbsp;Add-on content licences are sold by Nintendo.</p>
+
+<p class="caution0"><span class="style_main_xs" style="vertical-align:middle;">●</span>&nbsp;Wii Points are required to download add-on content (this involves a fee).</p>
+
+<p class="caution0"><span class="style_main_xs" style="vertical-align:middle;">●</span>&nbsp;For information on how to purchase Wii Points, go to the Wii Shop Channel or the Nintendo website at <nobr>http://wii.nintendo-europe.com/</nobr></p>
+
+<p class="caution0"><span class="style_main_xs" style="vertical-align:middle;">●</span>&nbsp;You can use the Account Activity feature of the Wii Shop Channel to check the names and purchase dates of add-on content that you have downloaded, as well as to check the <nobr>Wii Points</nobr> you have used.</p>
+
+<p class="caution0"><span class="style_main_xs" style="vertical-align:middle;">●</span>&nbsp;You can use the Wii Shop Channel to check how many Wii Points you have.</p>
+
+<p class="caution0"><span class="style_main_xs" style="vertical-align:middle;">●</span>&nbsp;If you don't have enough Wii Points, you will not be able to purchase an add-on content licence. To do so, add Wii Points from within the Wii Shop Channel.</p>
+
+<p class="caution0"><span class="style_main_xs" style="vertical-align:middle;">●</span>&nbsp;Purchased add-on content licences are saved in the Wii System Memory. If you don't have enough free space in your Wii System Memory, you will not be able to purchase an add-on content licence unless you free space by deleting data or moving it to an SD Card. For further information, read the Wii Operations Manual – Channels & Settings.</p>
+
+<p class="caution0"><span class="style_main_xs" style="vertical-align:middle;">●</span>&nbsp;Returns, refunds or exchanges are not possible for add-on content that has been purchased.</p>
+
+<p class="caution0"><span class="style_main_xs" style="vertical-align:middle;">●</span>&nbsp;Once a licence has been purchased for add-on content, such content may be downloaded again at no charge, even after you have deleted this content.</p>
+
+</div></div>
+			</div>
+	<!--  CONTENT ELEMENT, uid:35765/list [end] -->
+		</div></td>
+				    <td width="52" valign="top"></td>
+				  </tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td height="60" align="center">
+			<table width="550" border="0" align="center" cellpadding="0" cellspacing="0">
+				<tr>
+					<td width="152" align="left" id="prev"><a href="../page_02/page_02.html" onfocus="blurLink(this);"  target="_parent" onclick="wiiReturnSound()" onmouseover="wiiFocusSound()"><img src="../common_data/CHM_common_source/button_back_ukv.png" alt="back" name="foot_back" width="152" height="54" vspace="3" border="0" id="foot_back" onmouseover="MM_swapImage('foot_back','','../common_data/CHM_common_source_ro/button_back_ro_ukv.png',1)" onmouseout="MM_swapImgRestore()" /></a></td>
+					<td width="196" align="center" id="backlink"><a onmouseover="wiiFocusSound()" onclick="wiiReturnSound()" target="_parent" href="../index.html" ><img src="../common_data/CHM_common_source/button_index_ukv.png" alt="return" name="return_index" width="152" height="54" vspace="3" border="0" id="return_index" onmouseover="MM_swapImage('return_index','','../common_data/CHM_common_source_ro/button_index_ro_ukv.png',1)" onmouseout="MM_swapImgRestore()" /></a></td>
+					<td width="152" align="right" id="next"><a href="../page_04/page_04.html" onfocus="blurLink(this);"  target="_parent" onclick="wiiReturnSound()" onmouseover="wiiFocusSound()"><img src="../common_data/CHM_common_source/button_next_ukv.png" alt="next" name="foot_next" width="152" height="54" vspace="3" border="0" id="foot_next" onmouseover="MM_swapImage('foot_next','','../common_data/CHM_common_source_ro/button_next_ro_ukv.png',1)" onmouseout="MM_swapImgRestore()" /></a></td>
+					<td width="50"></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td height="32" background="../common_data/CHM_common_source/common_bottom.png"></td>
+	</tr>
+</table>
+
+</body>
+</html>
+<!-- Parsetime: 711 ms-->

@@ -1,0 +1,898 @@
+@charset "UTF-8";
+body {
+	font-family: "Wii NTLG PGothic Regular", "Wii NTLG Gothic Regular";
+	background-image: url(../common_data/CHM_common_source/background_gray.png);
+	margin: 0;
+	padding: 0;
+	background-color: #dbdbdb;
+}
+
+table,tr,th,td,thead,tbody,tfoot {margin:0;padding:0; border:0; border-spacing:0; font-weight:normal;border-collapse:collapse;}
+
+/*page title & small type*/
+#bgpagenumb {background:url(CHM_common_source/title_no_bg.png) 28px 0 no-repeat;}
+
+.style_title		{color: #ffffff;font-size: 28px;padding: 18px 1px 0 7px;text-align:left;}
+.style_title_m		{color: #ffffff;font-size: 21px;line-height:22px; padding: 18px 1px 0 7px;text-align:left;}
+.style_title_s 		{font-size: 18px;}
+
+.style_title2k		{color: #ffffff;font-size: 18px;line-height:16px; padding: 22px 1px 0 7px;text-align:left;}
+.style_title_ss		{font-size: 14px; padding-top:2px;}
+
+#style_pagenumber	{font-size: 16px;color: #FFFFFF;margin: 0 2px 20px 0;font-weight: bold; text-align:right;}
+/*main page number & two digits*/
+.style_number 		{color: #333333;font-size: 28px;font-weight: bold;padding:19px 0 0 48px; text-align:left;}
+.style_number2k 		{color: #333333;font-size: 28px;font-weight: bold;padding:20px 0 0 37px; text-align:left;}
+
+/*heading*/
+.style_heading_lc	{color: #333333;font-size: 26px;text-align: center;}
+.style_heading_l	{color: #333333;font-size: 26px;text-align: left;}
+.style_heading_m	{color: #333333;font-size: 24px;text-align: left;}
+.style_heading_s	{color: #333333;font-size: 19px;}
+.style_heading_blue	{color: #00D4F7;font-size: 22px;font-weight: normal;}
+
+/*warning*/
+.style_warning 		{color: #333333;font-size: 26px;text-align: left;padding-left: 10px;}
+.style_warning_s 	{color: #333333;font-size: 24px;text-align: left;padding-left: 10px; line-height:28px;}
+
+/*Welcom page_01*/
+.style_welcome 		{color: #333333;font-size: 24px;font-weight: normal;text-align: center;}
+
+/*main text*/
+.style_main 		{color: #333333;font-size: 18px;font-weight: normal;text-align: left;}
+.style_main_s 		{color: #333333;font-size: 18px;font-weight: normal;text-align: left;line-height:25px;}
+.style_main_xs		{color: #333333;font-size: 10px;font-weight: normal;text-align: left;}
+
+/***********************************/
+/************* RTE *****************/
+/***********************************/
+span.style_main  {font-family: "Wii NTLG PGothic Regular"; color: #333333; font-size: 18px; font-weight: normal; text-align: left;}
+
+/*spacer & paragraph*/
+.spacer5tu 			{margin:5px 0;}
+.spacer10tu 		{margin:10px 0;}
+.spacer20tu 		{margin:20px 0;}
+.spacer30tu 		{margin:30px 0;}
+
+.spacer3t 			{margin-top:3px;}
+.spacer5t 			{margin-top:5px;}
+.spacer7t 			{margin-top:7px;}
+.spacer9t 			{margin-top:9px;}
+.spacer10t 			{margin-top:10px;}
+.spacer11t 			{margin-top:11px;}
+.spacer12t 			{margin-top:12px;}
+.spacer13t 			{margin-top:13px;}
+.spacer15t 			{margin-top:15px;}
+.spacer17t 			{margin-top:17px;}
+.spacer20t 			{margin-top:20px;}
+.spacer21t 			{margin-top:21px;}
+.spacer25t 			{margin-top:25px;}
+.spacer27t 			{margin-top:27px;}
+.spacer30t 			{margin-top:30px;}
+
+.left 		{text-align: left;} 
+.height24	{line-height:24px;}
+.height28	{line-height:28px;}
+
+	
+	
+table.contenttable {
+	width: 100%;
+	text-align: left;
+	border-collapse: collapse;
+}
+table.contenttable thead {
+	background : #d8d8d8;
+	border: 1px solid #666666;
+	padding: 10px;
+	font-size: 18px;
+	vertical-align: top;
+	}
+	
+table.contenttable th {
+	background : #d8d8d8;
+	border: 1px solid #666666;
+	padding: 10px;
+	font-size: 18px;
+	vertical-align: top;
+	}
+
+table.contenttable td {
+	border: 1px solid #666666;
+	padding: 10px;
+	vertical-align: top;
+	}
+	
+
+
+	
+
+table.table_padding0 		{width : 458px; text-align: left; margin-left: 25px; border-collapse: collapse;}
+table.table_padding0 th 	{background: #d8d8d8; border: 1px solid #666666; padding: 10px; font-size: 18px; vertical-align: top;}
+table.table_padding0 td 	{border: 1px solid #666666; padding: 10px; vertical-align: top;}
+
+table.table_padding1 		{width : 458px; text-align: left; margin-left: 25px; border-collapse: collapse;}
+table.table_padding1 th 	{background: #d8d8d8; border: 1px solid #666666; padding: 10px; font-size: 18px; vertical-align: top;}
+table.table_padding1 td 	{border: 1px solid #666666; padding: 10px; vertical-align: top;}
+
+table.table_padding2 		{width : 438px; text-align: left; margin-left: 50px; border-collapse: collapse; overflow:hidden;}
+table.table_padding2 th 	{background: #d8d8d8; border: 1px solid #666666; padding: 10px; font-size: 18px; vertical-align: top;}
+table.table_padding2 td 	{border: 1px solid #666666; padding: 10px; vertical-align: top; overflow:hidden;}
+
+table.table_padding3 		{width : 418px; text-align: left; margin-left: 60px; border-collapse: collapse;  table-layout: fixed;}
+table.table_padding3 th 	{background: #d8d8d8; border: 1px solid #666666; padding: 10px; font-size: 18px; vertical-align: top;}
+table.table_padding3 td 	{border: 1px solid #666666; padding: 20px; vertical-align: top;}
+
+	
+	
+	
+	
+	
+.htmlarea-content-body table {
+	background: #d8d8d8;
+	border: 1px solid #666666;
+	padding: 10px;
+	font-size: 18px;
+	vertical-align: top;
+	width: 100%;
+	background-repeat: no-repeat;
+	text-align: left;
+}
+.htmlarea-content-body thead {
+	background : #d8d8d8;
+	border: 1px solid #666666;
+	padding: 10px;
+	font-size: 18px;
+	vertical-align: top;
+	text-align: left;
+	}
+.htmlarea-content-body th {
+	background : #d8d8d8;
+	border: 1px solid #666666;
+	padding: 10px;
+	font-size: 18px;
+	vertical-align: top;
+	text-align: left;
+	}
+.htmlarea-content-body td {
+	background : white;
+	border: 1px solid #666666;
+	padding: 10px;
+	vertical-align: top;
+	}
+
+
+		
+.htmlarea-showtableborders table {
+	border: 1px;
+}
+
+
+
+th[scope="col"] {}
+th[scope="row"] {}
+
+/************* ENDE RTE *****************/
+
+
+
+/*caption*/
+.style_caption 		{color: #333333;font-size: 18px;font-weight: normal;text-align: left; margin-top:5px;}
+.style_caption_c 	{color: #333333;font-size: 18px;font-weight: normal;text-align: center; margin-top:5px;}
+
+/*sub page contents top&under 10px space*/
+td.frame_margin 	{padding:10px 0;font-size: 18px}
+/* for TYPO3 CMS only: special Content-template for page_01.html, to change "Software title goes here" */
+td.cms_frame_margin 	{padding:10px 0;}
+
+/*blue frame heading*/
+.style_bar 			{color: #FFFFFF;font-size: 24px;text-align: center; line-height:1; font-weight: bold;}
+.style_bar2line		{color: #FFFFFF;font-size: 22px;text-align: center; line-height:1.2; font-weight: bold;}
+.style_bar3line		{color: #FFFFFF;font-size: 18px;text-align: center; line-height:1.2; font-weight: bold;}
+
+/*float box*/
+.floatright { float:right; clear:both; margin-left:10px;}
+.floatleft { float:left; clear:both; margin-right:10px;}
+
+/*indent*/
+
+
+p 					{margin:0;padding:0;}
+p.caution0 			{text-indent:-0.9em;padding-left:0.9em;}
+p.caution1 			{text-indent:-1.3em;padding-left:1.3em;}
+p.caution2 			{text-indent:-1.3em;padding-left:1.3em;margin-left:1.3em;}
+p.caution3 			{text-indent:-1.3em;padding-left:1.3em;margin-left:2.3em;}
+p.caution4 			{text-indent:-1.3em;padding-left:1.3em;padding-right:142px;}
+
+/*small text*/
+p.caution_s1 		{text-indent:-1em;padding-left:1em;}
+p.caution_s2 		{text-indent:-1em;padding-left:1em;margin-left:1em;}
+p.caution_s3 		{text-indent:-1em;padding-left:1em;margin-left:2em;}
+
+/* 
+p.padding0 			{margin-left:25px}
+*/
+p.padding1 			{margin-left:25px}
+p.padding2 			{margin-left:50px;}
+p.padding3 			{margin-left:3.1em;}
+
+
+/* ALT */
+/* p.padding2 			{padding-left:1.2em;margin-left:1.2em;}  */
+/* p.padding3 			{padding-left:1.3em;margin-left:1.3em;}  */
+
+
+
+
+
+p.padding_bulletpoint_small 			{padding-left:0.9em;	margin:0 0 0 20px;
+	padding: 0 0 0 22px;
+}
+
+
+
+p.bulletpoint_big_black	{
+	background-image: url('../common_data/CHM_common_source/bulletpoint.png');
+	background-repeat: no-repeat;
+	background-position: 3px -1px;
+	font-family: "Wii NTLG PGothic Regular";
+	font-size: 18px;
+	color: #333333;
+	text-align: left;
+	vertical-align: top;
+	margin:0 0 0 0;
+	padding: 0 0 0 25px;
+}
+p.bulletpoint_big_blue	{
+	background-image: url('../common_data/CHM_common_source/bulletpoint_blue.png');
+	background-repeat: no-repeat;
+	background-position: 3px -1px;
+	font-family: "Wii NTLG PGothic Regular";
+	font-size: 18px;
+	color: #43B6DF;
+	text-align: left;
+	vertical-align: top;
+	margin:0 0 0 0;
+	padding: 0 0 0 25px;
+}
+p.bulletpoint_big_red		{
+	background-image: url('../common_data/CHM_common_source/bulletpoint_red.png');
+	background-repeat: no-repeat;
+	background-position: 3px -1px;
+	font-family: "Wii NTLG PGothic Regular";
+	font-size: 18px;
+	color: #ff0000;
+	text-align: left;
+	vertical-align: top;
+	margin:0 0 0 0;
+	padding: 0 0 0 25px;
+}
+p.bulletpoint_small_black	{
+	background-image: url('../common_data/CHM_common_source/bulletpoint_small.png');
+	background-repeat: no-repeat;
+	background-position: 3px 3px;
+	font-family: "Wii NTLG PGothic Regular";
+	font-size: 18px;
+	color: #333333;
+	text-align: left;
+	vertical-align: top;
+	margin:0 0 0 23px;
+	padding: 0 0 0 27px;
+}
+p.bulletpoint_small_blue	{
+	background-image: url('../common_data/CHM_common_source/bulletpoint_small_blue.png');
+	background-repeat: no-repeat;
+	background-position: 3px 3px;
+	font-family: "Wii NTLG PGothic Regular";
+	font-size: 18px;
+	color: #43B6DF;
+	text-align: left;
+	vertical-align: top;
+	margin:0 0 0 23px;
+	padding: 0 0 0 27px;
+}
+p.bulletpoint_small_red	{
+	background-image: url('../common_data/CHM_common_source/bulletpoint_small_red.png');
+	background-repeat: no-repeat;
+	background-position: 3px 3px;
+	font-family: "Wii NTLG PGothic Regular";
+	font-size: 18px;
+	color: #ff0000;
+	text-align: left;
+	vertical-align: top;
+	margin:0 0 0 23px;
+	padding: 0 0 0 27px;
+}
+
+/*list*/
+ol					{ margin:0; padding:0 0 0 1.2em;}
+
+/*iconstyle*/
+span.iconstyle 		{}
+img.pbl				{vertical-align:-3px; margin:0 3px;}
+img.pbm				{vertical-align:-2px; margin:0 3px;}
+img.pbs				{vertical-align:-1px; margin:0 3px;}
+
+/*infomaton txt*/
+.style_caution 		{color: #FFFFFF;font-size: 18px; line-height: 28px; text-align: left; padding:0 10px; font-weight: bold;}
+.style_address		{color: #666666;font-size: 22px; line-height: 28px; text-align: center; padding-top: 5px;}
+.style_access		{color: #43B6DF;font-size: 30px; line-height: 40px; text-align: center; padding-top: 10px;padding-bottom: 10px;}
+.style_support		{color: #43B6DF;font-size: 21px; line-height: 39px; text-align: center;}
+
+/*color*/
+.color_red			{color: #FF0000;}
+.color_blue			{color: #43B6DF;}
+
+/*text layout*/
+.lefttxt			{text-align:left;}
+.centertxt			{text-align:center;}
+/*tag*/
+strong				{font-weight:bold;}
+/*-----------------------------------------------*/
+
+/*  from slawa.css  */
+.frame_margin 		{text-align: left; }
+
+
+/*-- TYPO3-CSS-File  f�r exportierte Bilder  --*/
+
+div.csc-textpic {clear:right;}
+
+dl.csc-textpic-image { 	margin: 0px 0px 5px 0px;	overflow: auto;}
+
+div.csc-textpic-intext-right div.csc-textpic-imagewrap {	float: right;	margin: 6px 0px 0px 10px;}
+div.csc-textpic-intext-left  div.csc-textpic-imagewrap {	float: left;	margin: 6px 10px 0px 0px;}
+
+div.csc-textpic div.csc-textpic-imagewrap .csc-textpic-image {margin-bottom:10px; margin-left: 0px;}
+
+
+div.csc-textpic-right div.csc-textpic-imagewrap {float:right;}
+
+div.csc-textpic-text {text-align: left;}
+
+div.csc-textpic-center {margin:0 auto;}
+div.csc-textpic-center {text-align:center;}
+
+dd.csc-textpic-caption {font-size:18px; text-align: center; margin:0;overflow: hidden}
+
+div.csc-textpic div.csc-textpic-imagewrap dl.csc-textpic-image {float:left;}
+
+div.csc-textpic-clear {clear:both;}
+
+
+a {color: #333333;font-size: 18px;font-weight: normal;text-align: left;
+	font-family: "Wii NTLG PGothic Regular";
+	text-decoration: none;
+}
+
+
+
+table.table_blue {
+  background: blue;
+}
+table.table_blue th{
+  font-weight: bold;
+}
+table.table_blue td{
+  color: white;
+}
+
+
+
+
+
+
+
+
+/*--  Space between Content-Blocks on the Empty Pages in TYPO3  -*/
+p.spacer_2px		{height: 2px; line-height: 6px;}
+p.spacer_5px		{height: 5px; line-height: 9px;}
+p.spacer_10px		{height: 10px; line-height: 14px;}
+p.spacer_20px		{height: 20px; line-height: 24px;}
+
+.smaller			{color: #FFFFFF;font-size: 22px;text-align: center; line-height:1.2; font-weight: bold;}
+.small			{color: #FFFFFF;font-size: 24px;text-align: center; line-height:1.2; font-weight: bold;}
+.bigger			{color: #FFFFFF;font-size: 26px;text-align: center; line-height:1; font-weight: bold;}
+.big			{color: #FFFFFF;font-size: 28px;text-align: center; line-height:1; font-weight: bold;}
+
+
+
+
+
+
+
+
+
+
+
+
+/************* RTE *****************/
+span.red { color: Red; }
+span.title {font-variant: small-caps;}
+span.small-caps {	font-variant: small-caps;}
+
+/*********** SLAWA ************/
+p, ul, ol {
+	font-family: "Wii NTLG PGothic Regular";
+ 	font-size: 18px;  
+	line-height:27px;
+}
+ul, ol {
+	margin: 0 0 0 0 ;
+	padding: 0;
+}
+
+p.headline 				{background-color: #43B6DF;	color: #FFFFFF;font-size: 24px;text-align: center; line-height:1; font-weight: bold; margin-bottom:10px;}
+p.headline_200			{background-color: #43B6DF;	color: #FFFFFF;font-size: 24px;text-align: center;	line-height:1; font-weight: bold; margin-bottom:10px; width: 200px;}
+
+li {
+	display: block;
+	font-weight: normal;
+	padding-left: 0;
+}
+li span {
+	font-weight: normal;
+}
+p.cautionParagraph {
+	padding-left: 0.5em;
+}
+.align-center {
+  text-align: center;
+}
+.align-left {
+  text-align: left;
+}
+.align-right {
+  text-align: right;
+}
+.align-justify {
+  text-align: justify;
+}
+
+.htmlarea-content-body ul,
+.htmlarea-content-body ol {
+	padding-left: 2em;
+}
+.htmlarea-content-body li {
+	display: list-item;
+}
+
+
+.style_main_xs_bp		{color: #333333;font-size: 10px;font-weight: normal;text-align: left;vertical-align: middle;}
+
+
+p.list_ordered_blue_1 {
+	background-image: url('CHM_common_source/no_01.png');
+	background-repeat: no-repeat;
+	background-position: 0 4px;
+	padding-left: 25px;
+}
+p.list_ordered_blue_2 {
+	background-image: url('CHM_common_source/no_02.png');
+	background-repeat: no-repeat;
+	background-position: 0 4px;
+	padding-left: 25px;
+}
+p.list_ordered_blue_3 {
+	background-image: url('CHM_common_source/no_03.png');
+	background-repeat: no-repeat;
+	background-position: 0 4px;
+	padding-left: 25px;
+}
+p.list_ordered_blue_4 {
+	background-image: url('CHM_common_source/no_04.png');
+	background-repeat: no-repeat;
+	background-position: 0 4px;
+	padding-left: 25px;
+}
+p.list_ordered_blue_5 {
+	background-image: url('CHM_common_source/no_05.png');
+	background-repeat: no-repeat;
+	background-position: 0 4px;
+	padding-left: 25px;
+}
+p.list_ordered_blue_6 {
+	background-image: url('CHM_common_source/no_06.png');
+	background-repeat: no-repeat;
+	background-position: 0 4px;
+	padding-left: 25px;
+}
+p.list_ordered_blue_7 {
+	background-image: url('CHM_common_source/no_07.png');
+	background-repeat: no-repeat;
+	background-position: 0 4px;
+	padding-left: 25px;
+}
+p.list_ordered_blue_8 {
+	background-image: url('CHM_common_source/no_08.png');
+	background-repeat: no-repeat;
+	background-position: 0 4px;
+	padding-left: 25px;
+}
+p.list_ordered_blue_9 {
+	background-image: url('CHM_common_source/no_09.png');
+	background-repeat: no-repeat;
+	background-position: 0 4px;
+	padding-left: 25px;
+}
+
+/*  
+.li1 {
+	background-image: url('CHM_common_source/no_01.png');
+	background-repeat: no-repeat;
+	background-position: 0 4px;
+	padding-left: 25px;
+}
+.li2 {
+	background-image: url('CHM_common_source/no_02.png');
+	background-repeat: no-repeat;
+	background-position: 0 4px;
+	padding-left: 25px;
+}
+.li3 {
+	background-image: url('CHM_common_source/no_03.png');
+	background-repeat: no-repeat;
+	background-position: 0 4px;
+	padding-left: 25px;
+}
+.li4 {
+	background-image: url('CHM_common_source/no_04.png');
+	background-repeat: no-repeat;
+	background-position: 0 4px;
+	padding-left: 25px;
+}
+.li5 {
+	background-image: url('CHM_common_source/no_05.png');
+	background-repeat: no-repeat;
+	background-position: 0 4px;
+	padding-left: 25px;
+}
+.li6 {
+	background-image: url('CHM_common_source/no_06.png');
+	background-repeat: no-repeat;
+	background-position: 0 4px;
+	padding-left: 25px;
+}
+.li7 {
+	background-image: url('CHM_common_source/no_07.png');
+	background-repeat: no-repeat;
+	background-position: 0 4px;
+	padding-left: 25px;
+}
+.li8 {
+	background-image: url('CHM_common_source/no_08.png');
+	background-repeat: no-repeat;
+	background-position: 0 4px;
+	padding-left: 25px;
+}
+.li9 {
+	background-image: url('CHM_common_source/no_09.png');
+	background-repeat: no-repeat;
+	background-position: 0 4px;
+	padding-left: 25px;
+}
+*/
+/*  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+**
+ *********************************
+ */
+.Nugget { /* FE AND BE !!! */
+	background-color: #43B6DF;
+	text-align: left;
+	color: white;
+	background-image: url('CHM_common_source/bg_row.gif');
+	padding-top: 0.3em;		/* will be overwritten */
+	padding-bottom: 0.3em;	/* will be overwritten */
+	margin-top: 1px;
+	margin-bottom: 1px;
+}
+.NuggetOutside { /* Only for FE */
+	text-align: center;
+	background: none;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	width: 535px;
+	padding: 0;
+}
+.NuggetInside { /* Only for FE */
+	padding-top: 0;
+	padding-bottom: 0;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+/* Exclamation mark! */
+.HeadLine {
+	background-image: url('CHM_common_source/warning_mark.gif');
+	background-repeat: no-repeat;
+	height: 34px;
+	padding-top: 5px;
+	padding-bottom: 0;
+	padding-left: 8%;
+	margin: 0;
+}
+.AllCaps {
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+}
+.AllCapsHead {
+	font-weight: bold;
+	text-align: left;
+}
+.GameTitle {
+	text-transform: uppercase;
+}
+
+img {
+	vertical-align: middle;
+}
+
+.Bold {
+	font-weight: bold;
+}
+
+.NuggetSmall { /* FE AND BE !!! */
+	background-color: #43B6DF;
+	font-weight: bold;
+	text-align: center;
+	color: white;
+	background-image: url('CHM_common_source/bg_row.gif');
+	padding-top: 0.3em;		/* will be overwritten */
+	padding-bottom: 0.3em;	/* will be overwritten */
+	margin-top: 1px;
+	margin-bottom: 1px;
+	width: 300px;
+}
+.NuggetSmallOutside { /* Only for FE */
+	text-align: center;
+	background: none;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	width: 300px;
+	padding: 0;
+}
+.NuggetSmallInside { /* Only for FE */
+	padding-top: 0;
+	padding-bottom: 0;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+td.RoundTable {
+	padding: 10px;
+	text-align: left;
+}
+
+blockquote,
+.blockquote {
+	padding: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 30px;
+}
+
+.blockquote2 {
+	padding: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 20px;
+}
+
+.Nugget strong {
+	display: block;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+
+.Nugget strong.normal {
+	display: inline;
+	text-align: left;
+}
+
+.Center {
+	text-align: center;
+}
+
+/*
+***************** Stile aus der Guideline **************************
+*/
+.NoFormat {
+	text-align: left;
+	vertical-align: top;
+}
+
+.HeadLine {
+	font-size: 16pt;
+	font-weight: bold;
+	color: #787878;
+}
+
+.MainTextMargin {
+	font-size: 14pt;
+	text-align: left;
+	vertical-align: top;
+	margin-top: -1px;
+	margin-left: 28px;
+	margin-bottom: 7px;
+}
+
+.Copyright {
+	font-size: 12pt;
+	text-align: left;
+	vertical-align: top;
+}
+
+.Warning_Red_Small {
+	font-size: 12pt;
+	color: #ff0000;
+	vertical-align: top;
+}
+
+
+
+
+
+
+/*********************************
+*
+*
+*
+**********************************/
+.blueTable th{
+	color: white;
+	text-align: left;
+	background: #43B6DF;
+	font-weight: bold;
+}
+.blueTable .firstRowLeft {
+	background: #43B6DF url('CHM_common_source/table_top_left.gif') top left no-repeat;
+	width: 8px;
+	height: 8px;
+}
+.blueTable .firstRowMiddle {
+	background: url('CHM_common_source/table_top_middle.gif') top left;
+	height: 8px;
+	color: white;
+}
+.blueTable .firstRowRight {
+	background: url('CHM_common_source/table_top_right.gif') top left no-repeat;
+	
+}
+.blueTable .lastRowLeft {
+	background: #43B6DF url('CHM_common_source/table_bottom_left.gif') top left no-repeat;
+	width: 8px;
+	height: 8px;
+}
+.blueTable .lastRowMiddle {
+	background: url('CHM_common_source/table_bottom_middle.gif') top left;
+	height: 8px;
+}
+.blueTable .lastRowRight {
+	background: url('CHM_common_source/table_bottom_right.gif') top left no-repeat;
+}
+.blueTable td {
+	text-align: left;
+}
+.blueTable td.last {
+	background: url('CHM_common_source/table_right_middle.gif');
+	width: 8px;
+}
+.blueTable td.last {
+	background: url('CHM_common_source/table_right_middle.gif');
+	width: 8px;
+}
+
+
+
+
+
+
+
+/*********************************
+*
+*
+*
+**********************************/
+
+.blueHeaderTable .firstRowLeft {
+	background: #43B6DF url('CHM_common_source/table_top_left.gif') top left no-repeat;
+	width: 8px;
+}
+.blueHeaderTable .firstRowMiddle {
+	background: #43B6DF;
+	color: white;
+}
+.blueHeaderTable .firstRowRight {
+	background: #43B6DF url('CHM_common_source/table_top_right_blue.gif') top left no-repeat;	
+}
+.blueHeaderTable .lastRowLeft {
+	background: url('CHM_common_source/table_bottom_left_white.gif') top left no-repeat;
+	width: 8px;
+	height: 8px;
+}
+.blueHeaderTable .lastRowMiddle {
+	background: url('CHM_common_source/table_bottom_middle.gif') top left;
+	height: 8px;
+}
+.blueHeaderTable .lastRowRight {
+	background: url('CHM_common_source/table_bottom_right.gif') top left no-repeat;
+}
+.blueHeaderTable .spacer {
+	background: #43B6DF;
+}
+.headerSpacer {
+	background: white;
+	width: 2px;
+}
+td .borderRight {
+	background: url('CHM_common_source/table_right_middle_blue.gif') repeat-y;	
+} 
+td .borderLeft {
+	background: url('CHM_common_source/table_left_middle_blue.gif') repeat-y;
+}
+
+
+
+/*********************************
+*
+*
+*
+**********************************/
+table.topLeftHeaderTable .firstRowLeft {
+	background: #43B6DF url('CHM_common_source/table_top_left.gif') top left no-repeat;
+	width: 8px;
+	height: 8px;
+}
+table.topLeftHeaderTable .firstRowMiddle {
+	background: #43B6DF;
+	color: white;
+}
+table.topLeftHeaderTable .firstRowRight {
+	background: #43B6DF url('CHM_common_source/table_top_right_blue.gif') top left no-repeat;	
+}
+table.topLeftHeaderTable .spacer {
+	background: #43B6DF;
+	width: 2px;
+}
+
+table.topLeftHeaderTable .lastRowLeft {
+	background: #43B6DF url('CHM_common_source/table_bottom_left.gif') top left no-repeat;
+	width: 8px;
+	height: 8px;
+}
+table.topLeftHeaderTable .lastRowMiddle {
+	background: url('CHM_common_source/table_bottom_middle.gif') top left;
+	height: 8px;
+}
+table.topLeftHeaderTable .lastRowRight {
+	background: url('CHM_common_source/table_bottom_right.gif') top left no-repeat;
+}
