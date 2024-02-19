@@ -6,5 +6,5 @@ This project is a restoration of the Wii Shop Channel. The Wii Shop Channel was 
 - Should be safe to install on a Wii console. I have tested it on dolphin and it works fine. I have not tested it on a real Wii console yet.
 
 ## Installation
-1. Download the `Wii Shop Channel.wad` from the repository.
+1. Download the `Wii Shop Channel.wad` from the repository. Or from the [releases](https://github.com/allancoding/Wii-Shop-Channel/releases/tag/wad-build) page.
 2. Install the WAD file using a WAD manager on your Wii console.

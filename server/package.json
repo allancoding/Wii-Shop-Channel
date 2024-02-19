@@ -1,14 +1,12 @@
 {
-  "name": "wii-shop",
+  "name": "wii-shop-channel",
   "version": "1.0.0",
-  "description": "",
+  "description": "The Wii Shop Channel Server for the Wii Shop Channel Restoration Project.",
   "main": "main.js",
   "scripts": {
-    "start": "node main.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node main.js"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Allan Niles",
   "dependencies": {
     "express": "^4.18.2"
   }
