@@ -582,7 +582,6 @@ span.font24px{ font-size: 24px; }
 </head>
 
 <script type="text/JavaScript">
-<!--
 function addParam(url, param, value)
 {
     var setParamStr = param + "=" + encodeURIComponent(value);
@@ -602,12 +601,20 @@ function addParam(url, param, value)
 
 function showCheckRegistered()
 {
+	document.getElementById("log").innerHTML = "function";
     var shop = new wiiShop();
+	document.getElementById("log").innerHTML = "shop";
     // Redirects to CheckRegistered.jsp with important device info	
-    var ec = new ECommerceInterface ();
+	try {
+    	var ec = new ECommerceInterface ();
+	} catch(e){
+		document.getElementById("log").innerHTML = e;
+	}
+	//document.getElementById("log").innerHTML = "next";
     var url = "/oss/serv/CheckRegistered.html";
     var r = ec.getDeviceInfo();
     var shopAppTitleId = r.titleId;
+	document.getElementById("log").innerHTML = "info";
     if (shopAppTitleId != null) {
         var t = ec.getTitleInfo(shopAppTitleId);         
         url = addParam(url, "titleId", shopAppTitleId);
@@ -615,6 +622,7 @@ function showCheckRegistered()
            url = addParam(url, "titleVersion", t.version);
         }
     }
+	document.getElementById("log").innerHTML = "part 1";
     if (r.country != null) {
         url = addParam(url, "country", r.country);
     }
@@ -624,13 +632,13 @@ function showCheckRegistered()
     if (r.userAge != null && r.isParentalControlEnabled) {
         url = addParam(url, "age", r.userAge);
     }
-
     if (r.language != null) {
         url = addParam(url, "language", r.language);
     }
     if (r.serial != null) {
         url = addParam(url, "Serial", r.serial);
     }
+	document.getElementById("log").innerHTML = url;
     if (ec && "setSessionValue" in ec) {   
 
       var titleId = '0001000157414945';
@@ -661,16 +669,15 @@ function initPage()
 	} 
 
 	if (shop && "beginWaiting" in shop) {
-	    shop.beginWaiting();
+	    //shop.beginWaiting();
 	}
 	
 	if (shop && "disableHRP" in shop) {
-		shop.disableHRP();
+		//shop.disableHRP();
 	}
 	// The method called here is showCheckRegistered in index.jsp, not in oss.js
-	showCheckRegistered(false);
+	showCheckRegistered();
 }
-//-->
 </script>
 
 <body onload="initPage()">
@@ -679,7 +686,7 @@ function initPage()
 <div class="dot" id="line02">･･･････････････････････････････････････････････････････････････････････････</div>
 
 <div class="titleBlueL" id="text01-01">
-  <span id="wiiTitle">Wii Shop Channel</span>
+  <span id="wiiTitle">Wii Shop Channel</span><p id="log">ok</p>
 </div>
 <div align="center" class="titleBlueL" id="text02-01">
    <span id="wiiMessage"></span>
