@@ -1,15 +1,3 @@
-/*
- *  Copyright 2005-2014 Acer Cloud Technology, Inc.
- *  All Rights Reserved.
- *
- *  This software contains confidential information and
- *  trade secrets of Acer Cloud Technology, Inc.
- *  Use, disclosure or reproduction is prohibited without
- *  the prior express written permission of Acer Cloud
- *  Technology, Inc.
- */
-
-        
 /* ECError values */
 var EC_ERROR_OK                   =     0;  /* No error */
 var EC_ERROR_FAIL                 = -4001;  /* Generic error */

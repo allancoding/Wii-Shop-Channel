@@ -1,14 +1,3 @@
-/*
- *  Copyright 2005-2014 Acer Cloud Technology, Inc.
- *  All Rights Reserved.
- *
- *  This software contains confidential information and
- *  trade secrets of Acer Cloud Technology, Inc.
- *  Use, disclosure or reproduction is prohibited without
- *  the prior express written permission of Acer Cloud
- *  Technology, Inc.
- */
-
 function MM_preloadImages() { //v3.0
   var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
     var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)

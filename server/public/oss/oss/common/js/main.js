@@ -1,65 +1,10 @@
-<!--  -----------------------------------------------------  -->
-<!--  Copyright 2005-2014 Acer Cloud Technology, Inc.        -->
-<!--  All Rights Reserved.                                   -->
-<!--                                                         -->
-<!--  This software contains confidential information and    -->
-<!--  trade secrets of Acer Cloud Technology, Inc.           -->
-<!--  Use, disclosure or reproduction is prohibited without  -->
-<!--  the prior express written permission of Acer Cloud     -->
-<!--  Technology, Inc.                                       -->
-<!--  -----------------------------------------------------  -->
-<!--  -----------------------------------------------------  -->
-<!--  Copyright 2005-2014 Acer Cloud Technology, Inc.        -->
-<!--  All Rights Reserved.                                   -->
-<!--                                                         -->
-<!--  This software contains confidential information and    -->
-<!--  trade secrets of Acer Cloud Technology, Inc.           -->
-<!--  Use, disclosure or reproduction is prohibited without  -->
-<!--  the prior express written permission of Acer Cloud     -->
-<!--  Technology, Inc.                                       -->
-<!--  -----------------------------------------------------  -->
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<!-- Flush buffer before setting locale to ensure encoding is preserved -->
-<html>
-<head>
-<!--  -----------------------------------------------------  -->
-<!--  Copyright 2005-2014 Acer Cloud Technology, Inc.        -->
-<!--  All Rights Reserved.                                   -->
-<!--                                                         -->
-<!--  This software contains confidential information and    -->
-<!--  trade secrets of Acer Cloud Technology, Inc.           -->
-<!--  Use, disclosure or reproduction is prohibited without  -->
-<!--  the prior express written permission of Acer Cloud     -->
-<!--  Technology, Inc.                                       -->
-<!--  -----------------------------------------------------  -->
-<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-<link rel="shortcut icon" href="/oss/favicon.ico" /> 
-<link href="/oss/oss/common/css/oss.css" rel="stylesheet" type="text/css" />
-<link href="/oss/oss/common/css/error.css" rel="stylesheet" type="text/css" />
-<script type="text/JavaScript">
-<!--
-	var ecCheck = false;
-	var errorCheck = false;
-	var buttonsCheck = false;
-	var imagesCheck = false;
-	var soundCheck = false;
-	var shopCheck = false;
-	var ossCheck = false;
-//-->
-</script>
-
-<SCRIPT language="JavaScript" src="/oss/oss/common/js//ec.js"></SCRIPT>
-<SCRIPT language="JavaScript" src='/oss/oss/common/js//error.js'></SCRIPT>
-<SCRIPT language="JavaScript" src="/oss/oss/common/js//buttons.js"></SCRIPT>
-<SCRIPT language="JavaScript" src="/oss/oss/common/js//images.js"></SCRIPT>
-<SCRIPT language="JavaScript" src='/oss/oss/common/js//sound.js'></SCRIPT>
-<SCRIPT language="JavaScript" src="/oss/oss/common/js//shop.js"></SCRIPT>
-<SCRIPT language="JavaScript" src="/oss/oss/common/js//oss.js"></SCRIPT>
-
-<script type="text/JavaScript">
-<!--
+var ecCheck = false;
+var errorCheck = false;
+var buttonsCheck = false;
+var imagesCheck = false;
+var soundCheck = false;
+var shopCheck = false;
+var ossCheck = false;
 var testMode = 'false';
 
 function getMethod()
@@ -76,7 +21,7 @@ function getPostParams()
 
 function isConnectingPage()
 {
-    var isConnecting = '';
+    var isConnecting = 'true';
     return (isConnecting == 'true');
 }
 
@@ -141,8 +86,8 @@ function initPageCommon()
 
 	imagesPath = "/oss/oss/common/images/";
 	htmlPath = "/oss/oss/common/html";
-	ossPath = "https://oss-auth.shop.wii.com/oss/serv/";
-	secureOssPath = "https://oss-auth.shop.wii.com/oss/serv/";	
+	ossPath = "/oss/serv/";
+	secureOssPath = "/oss/serv/";	
 
 	ecTimeout = new ECTimeout(parseInt("60000"));
 	
@@ -180,18 +125,6 @@ function initPageCommon()
 	   	wiiEnableHRP();
 	}
 }
-
-<!--  -----------------------------------------------------  -->
-<!--  Copyright 2005-2014 Acer Cloud Technology, Inc.        -->
-<!--  All Rights Reserved.                                   -->
-<!--                                                         -->
-<!--  This software contains confidential information and    -->
-<!--  trade secrets of Acer Cloud Technology, Inc.           -->
-<!--  Use, disclosure or reproduction is prohibited without  -->
-<!--  the prior express written permission of Acer Cloud     -->
-<!--  Technology, Inc.                                       -->
-<!--  -----------------------------------------------------  -->
-
 
 // Takes a progress object and returns the OSS error message to be displayed to the user
 function getOssErrorMsg(progress)
@@ -402,150 +335,3 @@ function needSyncEticket(progress)
 	}
 	return false;		
 }
-
-
-
-//-->
-
-</script>
-<title>Wii Shop Channel</title>
-<style type="text/css">
-  /* L_03:  Use Agreement */
-
-
-#text01-01 {
-	position:absolute;
-	left:29px;
-	top:28px;
-	width:542px;
-	height:28px;
-	z-index:26;
-}
-
-.eulaFrame { /* L_03_UA */
-	border:solid 1px #35beed;
-	position:absolute;
-	left:34px;
-	top:89px;
-	width:540px;
-	height:262px;
-	z-index:27;
-	overflow:auto;
-}
-
-#text02-01 { /* L_03 */
-	position:absolute;
-	left:34px;
-	top:91px;
-	width:540px;
-	height:194px;
-	z-index:26;
-}
-</style>
-<script type="text/JavaScript">
-<!--
-function initPage(){
-    initPageCommon();
-    MM_preloadImages('/oss/oss/common/images//banner/under_banner_b.gif');
-
-    if(shop.isCompatibleMode){
-        setUnderButton(true, "OK", "javascript:termsAgreed('')",  "snd.playSE(cSE_Decide)");
-    } else {
-        setUnderButton(true, "OK", "javascript:termsAgreed('')",  "snd.playSE(cSE_Decide)");
-    }
-
-}
-var scroll_step = 30;
-function kdown(){
-    var _code = event.keyCode;
-    var _obj = document.getElementById('text02-01');
-    switch(_code){
-        case 175:    //up
-        case  38:
-            _obj.scrollTop -= scroll_step;
-            break;
-        case 176:    //down
-        case  40:
-            _obj.scrollTop += scroll_step;
-            break;
-    }
-}
-//-->
-</script>
-</head>
-
-<body onkeypress="kdown();" onload="initPage(); document.getElementById('text02-01').focus();">
-
-<!--  -----------------------------------------------------  -->
-<!--  Copyright 2005-2014 Acer Cloud Technology, Inc.        -->
-<!--  All Rights Reserved.                                   -->
-<!--                                                         -->
-<!--  This software contains confidential information and    -->
-<!--  trade secrets of Acer Cloud Technology, Inc.           -->
-<!--  Use, disclosure or reproduction is prohibited without  -->
-<!--  the prior express written permission of Acer Cloud     -->
-<!--  Technology, Inc.                                       -->
-<!--  -----------------------------------------------------  -->
-<script language="JavaScript">MM_preloadImages('/oss/oss/common/images//banner/under_banner_b.gif');</script>
-<div id="underButtonL" style="display:none">
-    <div id="underbannershadowL" class="buttonBannerShadow">
-   	  <img src="/oss/oss/common/images//banner/under_banner_shadow.gif" width="211" height="75" />
-   	</div>
-    <div id="underbannerL" class="buttonBanner">
-    	<img src="/oss/oss/common/images//banner/under_banner_a.gif" width="187" height="55" id="underImgL" />
-    </div>
-    <div id="underspacerL" class="buttonSpacer">
-	  <a href="" id="underlinkL">
-    	<img id="underimageL" src="/oss/oss/common/images//spacer.gif" width="187" height="55" border="0"  
-    	onmouseover="MM_swapImage('underImgL','','/oss/oss/common/images//banner/under_banner_b.gif',1); snd.playSE( cSE_Forcus );" 
-    	onmouseout="MM_swapImgRestore()"/>
-      </a>	
-    </div>
-    <div id="underwordL" align="center" class="buttonTextBlackM buttonWord">
-    </div>
-</div>
-
-<div id="underButtonR" style="display:none">
-    <div id="underbannershadowR" class="buttonBannerShadow">
-   	  <img src="/oss/oss/common/images//banner/under_banner_shadow.gif" width="211" height="75" />
-   	</div>
-    <div id="underbannerR" class="buttonBanner">
-    	<img src="/oss/oss/common/images//banner/under_banner_a.gif" width="187" height="55" id="underImgR" />
-    </div>
-    <div id="underspacerR" class="buttonSpacer">
-	  <a href="" id="underlinkR">
-    	<img id="underimageR" src="/oss/oss/common/images//spacer.gif" width="187" height="55" border="0"  
-    	onmouseover="MM_swapImage('underImgR','','/oss/oss/common/images//banner/under_banner_b.gif',1); snd.playSE( cSE_Forcus ); " 
-    	onmouseout="MM_swapImgRestore()"/>
-      </a>	
-    </div>
-    <div id="underwordR" align="center" class="buttonTextBlackM buttonWord">
-    </div>
-</div>
-
-<div id="underButton" style="display:none">
-    <div id="underbannershadow" class="buttonBannerShadow">
-    	<img src="/oss/oss/common/images//banner/under_banner_shadow.gif" width="211" height="75" /></div>
-    <div id="underbanner" class="buttonBanner">
-    	<img src="/oss/oss/common/images//banner/under_banner_a.gif" width="187" height="55" id="underImg" /></div>
-    <div id="underspacer" class="buttonSpacer">
-	<a href="" id="underlink">
-    	<img id="underimage" src="/oss/oss/common/images//spacer.gif" width="187" height="55" border="0" 
-    	onmouseover="MM_swapImage('underImg','','/oss/oss/common/images//banner/under_banner_b.gif',1); snd.playSE( cSE_Forcus );" 
-    	onmouseout="MM_swapImgRestore()">
-    	</a>
-    </div>
-    <div id="underword" align="center" class="buttonTextBlackM buttonWord"></div>
-</div>
-
-
-<div class="dot" id="line01">･･･････････････････････････････････････････････････････････････････････････</div>
-<div class="dot" id="line02">･･･････････････････････････････････････････････････････････････････････････</div>
-<div style="position:absolute; left:0px; top:0px; width:1px; height:1px; z-index:6;">
-    <img src="/oss/oss/common/images//spacer.gif" name="ktouch" width="1" height="1" border="0" id="ktouch"/>
-</div>
-<div class="titleBlueL" id="text01-01">Wii Shop Channel</div>
-<div class="catalogTitleBlack_01" id="text02-01">Welcome to the Wii Shop Channel!<BR><BR>In this channel, you&rsquo;ll find a variety of classic games for Virtual Console as well as new software created exclusively for the Wii console. You can redeem Wii Points to download these software titles, or in some cases, you can obtain them for free.<BR><BR>Happy shopping!</div>
-</body>
-
-</html>

@@ -1,14 +1,3 @@
-/*
- *  Copyright 2005-2014 Acer Cloud Technology, Inc.
- *  All Rights Reserved.
- *
- *  This software contains confidential information and
- *  trade secrets of Acer Cloud Technology, Inc.
- *  Use, disclosure or reproduction is prohibited without
- *  the prior express written permission of Acer Cloud
- *  Technology, Inc.
- */
-
 var ec = new ECommerceInterface ();  // only create one per page
 
 var debug = false;
@@ -548,7 +537,7 @@ function showHelp(index)
 }
 
 function showWelcome() {
-    showCheckBalance("W_01.jsp");
+    showCheckBalance("W_01.html");
 }
 
 function showHome(replace) {
@@ -560,7 +549,7 @@ function showHome(replace) {
     if (giftStatus == "receiving") {
         goGiftLoop();	
     } else {
-        showPage("W_03.jsp", replace);
+        showPage("W_03.html", replace);
     }
 }
 
@@ -586,7 +575,7 @@ function showPoints()
         if ((r.country == 'KR' && r.region == 'KOR' && r.language == 'ko') || supportsCreditCard!="true") {
               if(shop.isCompatibleMode)
 	      {
-		  showPage("P_02_WiiU1st.jsp");
+		  showPage("P_02_WiiU1st.html");
 	      }
 	      else
 	      {

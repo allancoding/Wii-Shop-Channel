@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- Flush buffer before setting locale to ensure encoding is preserved -->
+<!-- Main page -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+<link rel="shortcut icon" href="/oss/favicon.ico" /> 
+<link href="/oss/oss/common/css/oss.css" rel="stylesheet" type="text/css" />
+<link href="/oss/oss/common/css/error.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT language="JavaScript" src="/oss/oss/common/js//main.js"></SCRIPT>
+<SCRIPT language="JavaScript" src="/oss/oss/common/js//ec.js"></SCRIPT>
+<SCRIPT language="JavaScript" src='/oss/oss/common/js//error.js'></SCRIPT>
+<SCRIPT language="JavaScript" src="/oss/oss/common/js//buttons.js"></SCRIPT>
+<SCRIPT language="JavaScript" src="/oss/oss/common/js//images.js"></SCRIPT>
+<SCRIPT language="JavaScript" src='/oss/oss/common/js//sound.js'></SCRIPT>
+<SCRIPT language="JavaScript" src="/oss/oss/common/js//shop.js"></SCRIPT>
+<SCRIPT language="JavaScript" src="/oss/oss/common/js//oss.js"></SCRIPT>
+
+<title>Wii Shop Channel</title>
+<style type="text/css">
+  /* F_01:  Connecting to Server */
+/* NOTE:  used by index.jsp, Register.jsp, CheckRegistered.jsp, and CheckBalance.jsp */
+
+#text01-01 {
+	position:absolute;
+	left:29px;
+	top:28px;
+	width:546px;
+	height:28px;
+	z-index:27;
+}
+#text02-01 {
+	position:absolute;
+	left:25px;
+	top:100px;
+	width:560px;
+	height:180px;
+	z-index:31;
+}</style>
+</head>
+
+<script type="text/JavaScript">
+function checkRegistration()
+{
+    var progress = ec.checkRegistration ();
+    opName = "Check Registration";
+    opDesc = "Checking Registration";
+    finishOp(opName, opDesc, progress, "onCheckRegistrationDone");
+}
+
+function onCheckRegistrationDone (progress)
+{
+    showResult (progress, opName, opDesc);
+    if (progress.status >= 0) {
+        var r = ec.getDeviceInfo ();
+        // If not registered - set loyalty system and show terms, call register
+        // If transfer pending - show "Confirm Transfer", call transfer
+        // If transfer complete - call transfer to get account id (show status)
+        // If registered - call register to get account id (show status)
+        //trace("device id=" + r.accountId + " status=" + r.registrationStatus);
+        switch (r.registrationStatus) {
+          case 'U': // Not registered
+                // Ask user to register
+
+                if (useSyncRegistration) {
+                    if (r.accountId == EC_INVALID_ACCOUNT_ID) {
+                        // Ask user to register
+                        trace("Ask the user to register - U");
+                        replacePage('L_03.jsp');
+                    } else {
+                        // Synchronizes registration info
+                        trace("Get registration info - U");
+                        showRegister("getRegistrationInfo");
+                    }
+                } else {
+                     // Ask user to register
+                     trace("Ask the user to register - U");
+                        replacePage('L_03.jsp');
+                }
+                break;
+            case 'R': // Registered
+                trace("Get registration info - R");
+                showRegister("getRegistrationInfo");
+                break;
+            case 'P': // Transfer pending
+                trace("Transfer pending - P");
+                showRegister("performPendingTransfer");
+                break;
+            case 'T':
+                trace("Get transfer info - T");
+                showRegister("getTransferInfo");
+                break;
+            default:
+                var errorStr = "Unknown registration status: " + r.registrationStatus;
+                trace(errorStr);;
+                setConnectingToServer(false);               
+                setUnderButton(true, shop.menuBtn, "javascript:showWiiMenu()", "wiiSelectSound();");
+                hideElement("text02-01");
+                var elem = document.getElementById("errorCodeText");
+                setErrorHtmlMsg(elem, OSS_INVALID_REGISTRATION_STATUS, "The Wii Number you entered is incorrect.<BR><BR>Visit support.nintendo.com for assistance.");
+                break;              
+        }
+    } else {
+        setConnectingToServer(false);
+        setUnderButton(true, shop.menuBtn, "javascript:showWiiMenu()", "wiiSelectSound();");
+        // Show error message and code
+        hideElement("text02-01");
+        var elem = document.getElementById("errorCodeText");
+        setErrorHtml(elem, progress);
+    }
+}
+
+// Check if device is registered
+function checkRegistered()
+{
+    setUnderButton(false);
+    var r = ec.getDeviceInfo ();
+    // Probably we can delete the line below.
+    var checkRegisterNeeded = isCheckRegisterNeeded();
+    var weakToken = ec.getWeakToken();
+    trace("AccountId=" + r.accountId + " token=" + weakToken + " Country=" + r.country + " a/c Country=" + r.accountCountry);
+    trace("DeviceCode=" + r.deviceCode + " a/c DeviceCode=" + r.accountDeviceCode);
+        
+    if (!checkRegisterNeeded) {
+        checkRegisterNeeded = (r.accountId == EC_INVALID_ACCOUNT_ID || !weakToken);
+    }
+        
+    if (checkRegisterNeeded) {
+        // No account id - Ask server if registered
+        checkRegistration();
+    } else {
+        // Check if console country and registered country different
+        // If different, show terms and re-register
+        // Already registered and has account id - goto home
+        if (r.country != r.accountCountry) {
+            replacePage("L_01.jsp?origCountry=" + r.accountCountry);
+        } else if ((r.accountDeviceCode != undefined)
+                    && (r.accountDeviceCode != null)
+                    && (r.accountDeviceCode != "") 
+                    && (r.deviceCode != r.accountDeviceCode)) {
+            trace("Re-registering because device code is out of sync: old " + r.accountDeviceCode + ", new " + r.deviceCode);
+            showRegister("register");
+        } else {
+            showInitialPage(true);
+        }
+    }
+}
+
+function showWiiMenuButton()
+{
+
+        // Goto Wii Menu
+        setUnderButton(true, shop.menuBtn, "javascript:showWiiMenu()", "wiiSelectSound();");
+    
+}
+
+function showUpdateButton()
+{
+
+        // Goto Update screen.
+        if ( shop.isCompatibleMode )
+        {
+            setUnderButtonL(true, "Wii Menu", "javascript:showWiiMenu()", "wiiSelectSound();");
+            setUnderButton(true, "Wii U Menu", "javascript:shop.rebootSystem()", "wiiSelectSound();");
+        }
+        else
+        {
+            setUnderButton(true, "System Update", "javascript:showUpdate()", "wiiSelectSound();");
+        }
+    
+}
+
+function showUpdateAvailable(){
+    // Show error message and code
+    setConnectingToServer(false);
+    var elem = document.getElementById("text02-01");
+    if ( shop.isCompatibleMode ){
+        showWiiMenuButton();
+        elem.innerHTML = "<span class='buttonTextBlackM'>There is an update to the Wii Shop Channel!<BR><BR>To receive this update, go to System Settings on the Wii U Menu and select System Update. Come back after you&rsquo;ve updated!</span>";
+    } else {
+        if (isShowUpdateAvailable()) {
+            showUpdateButton();
+        } else {
+            showWiiMenuButton();
+        }
+        elem.innerHTML = "<span class='buttonTextBlackM'>There is an update to the Wii Shop Channel!<BR><BR>To receive this update, go to Wii Settings and select Wii System Update. When you return to the Wii Shop Channel, you will receive the update. Come back after you&rsquo;ve updated!</span>";
+    }
+}
+
+function showInvalidShopApp(errCode)
+{
+    if (testMode == 'true') {
+        // Test mode: Let them continue without showing error
+        checkRegistered();
+    } else {
+        setConnectingToServer(false);
+        showWiiMenuButton();
+        // Show error message and code
+        hideElement("text02-01");
+        var elem = document.getElementById("errorCodeText");
+        setErrorHtmlMsg(elem, errCode, "An error has occurred that cannot be resolved at this time. Please try again later.<BR><BR>Visit support.nintendo.com for assistance if this continues.");
+    }
+}
+
+function checkShopApp()
+{
+    // Checks the shop app version
+    var latestVersion = parseInt('');
+    var titleId = '';
+    var isManualEnabled = '';
+    if (ecSupportsSession()) {
+        ec.setSessionValue("isShopManEnabled", isManualEnabled);
+    }   
+    var ok = false;
+        
+    // Check titleId is same as the shop app title id
+    var shopAppTitleId = getShopAppTitleId();
+    if (shopAppTitleId != null && titleId.substr(4) == shopAppTitleId.substr(4)) {
+        var t = ec.getTitleInfo("0001" + shopAppTitleId.substr(4));
+        var updateAvailable = isTitleUpdateAvailable(t, latestVersion);
+        if (updateAvailable) {
+            // Show message saying update is available, please update
+            showUpdateAvailable();
+            ok = false;
+        } else if (updateAvailable == null) {
+            trace("Cannot determine if updateAvailable for title " + shopAppTitleId);
+            ok = false;
+            showInvalidShopApp(OSS_INVALID_SHOP_APP_NO_TITLE_INFO);
+        } else {
+            ok = true;
+        }
+    } else {
+        trace("Shop title is " + shopAppTitleId + ", got info for title " + titleId);
+        // Reject
+        ok = false;
+        showInvalidShopApp(OSS_INVALID_SHOP_APP_BAD_TITLE_ID);
+    }
+    return ok;
+}
+
+function OnSetTask()
+{
+    try {
+    	var objDlTask = new wiiDlTask();
+	    var strTaskUrl = "http://ccs.cdn.shop.wii.com/ccs/download//dynamicBanner_en_US";
+    	var nTaskInterval = 1440;
+	    trace("Adding download task: " + strTaskUrl);
+	    objDlTask.addDownloadTask(strTaskUrl, nTaskInterval); 
+    } catch (err) {
+        trace("Error adding download task: " + err + " / " + strTaskUrl);
+    }	 
+}
+
+function initPage()
+{
+    MM_preloadImages('/oss/oss/common/images//banner/under_banner_b.gif');
+    var ok;
+    var target;
+    initPageCommon();
+    //target = countryInfo.getCountryId();
+    
+    //if(target) {
+        OnSetTask();
+        trace("Wii Sales Target!!");
+    //}
+    
+    ok = checkShopApp();
+    if (ok) {
+        checkRegistered();
+    } 
+}
+</script>
+
+<body onload="initPage()">
+<script language="JavaScript">MM_preloadImages('/oss/oss/common/images//banner/under_banner_b.gif');</script>
+<div id="underButtonL" style="display:none">
+    <div id="underbannershadowL" class="buttonBannerShadow">
+   	  <img src="/oss/oss/common/images//banner/under_banner_shadow.gif" width="211" height="75" />
+   	</div>
+    <div id="underbannerL" class="buttonBanner">
+    	<img src="/oss/oss/common/images//banner/under_banner_a.gif" width="187" height="55" id="underImgL" />
+    </div>
+    <div id="underspacerL" class="buttonSpacer">
+	  <a href="" id="underlinkL">
+    	<img id="underimageL" src="/oss/oss/common/images//spacer.gif" width="187" height="55" border="0"  
+    	onmouseover="MM_swapImage('underImgL','','/oss/oss/common/images/banner/under_banner_b.gif',1); snd.playSE( cSE_Forcus );" 
+    	onmouseout="MM_swapImgRestore()"/>
+      </a>	
+    </div>
+    <div id="underwordL" align="center" class="buttonTextBlackM buttonWord">
+    </div>
+</div>
+
+<div id="underButtonR" style="display:none">
+    <div id="underbannershadowR" class="buttonBannerShadow">
+   	  <img src="/oss/oss/common/images//banner/under_banner_shadow.gif" width="211" height="75" />
+   	</div>
+    <div id="underbannerR" class="buttonBanner">
+    	<img src="/oss/oss/common/images//banner/under_banner_a.gif" width="187" height="55" id="underImgR" />
+    </div>
+    <div id="underspacerR" class="buttonSpacer">
+	  <a href="" id="underlinkR">
+    	<img id="underimageR" src="/oss/oss/common/images//spacer.gif" width="187" height="55" border="0"  
+    	onmouseover="MM_swapImage('underImgR','','/oss/oss/common/images/banner/under_banner_b.gif',1); snd.playSE( cSE_Forcus ); " 
+    	onmouseout="MM_swapImgRestore()"/>
+      </a>	
+    </div>
+    <div id="underwordR" align="center" class="buttonTextBlackM buttonWord">
+    </div>
+</div>
+
+<div id="underButton" style="display:none">
+    <div id="underbannershadow" class="buttonBannerShadow">
+    	<img src="/oss/oss/common/images//banner/under_banner_shadow.gif" width="211" height="75" /></div>
+    <div id="underbanner" class="buttonBanner">
+    	<img src="/oss/oss/common/images//banner/under_banner_a.gif" width="187" height="55" id="underImg" /></div>
+    <div id="underspacer" class="buttonSpacer">
+	<a href="" id="underlink">
+    	<img id="underimage" src="/oss/oss/common/images//spacer.gif" width="187" height="55" border="0" 
+    	onmouseover="MM_swapImage('underImg','','/oss/oss/common/images/banner/under_banner_b.gif',1); snd.playSE( cSE_Forcus );" 
+    	onmouseout="MM_swapImgRestore()">
+    	</a>
+    </div>
+    <div id="underword" align="center" class="buttonTextBlackM buttonWord"></div>
+</div>
+
+
+<div class="dot" id="line01">･･･････････････････････････････････････････････････････････････････････････</div>
+<div class="dot" id="line02">･･･････････････････････････････････････････････････････････････････････････</div>
+
+<div class="titleBlueL" id="text01-01">
+  Wii Shop Channel</div>
+<div align="center" class="titleBlueL" id="text02-01">
+Connecting. Please wait...
+<div id="Progress">
+	<div id="dynDiv1" class="contentsBlackS"></div>
+    <div id="dynDiv2" class="contentsBlackS"></div>
+    <div id="errDiv" class="contentsBlackS"></div>
+</div></div>
+
+<div align="left" id="errorCodeText"></div>
+</body>
+</html>
