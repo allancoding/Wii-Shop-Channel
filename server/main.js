@@ -1,8 +1,14 @@
 var express = require('express');
 var http = require('http');
+var https = require('https');
 var fs = require('fs');
 var path = require('path');
 var morgan = require("morgan");
+
+var options = {
+  key: fs.readFileSync('server.key'),
+  cert: fs.readFileSync('server.pem')
+};
 
 var app = express();
 
@@ -13,3 +19,4 @@ app.get('/startup', function(req, res){
 });
 
 http.createServer(app).listen(80);
+https.createServer(options, app).listen(443);

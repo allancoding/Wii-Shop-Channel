@@ -669,11 +669,11 @@ function initPage()
 	} 
 
 	if (shop && "beginWaiting" in shop) {
-	    //shop.beginWaiting();
+	    shop.beginWaiting();
 	}
 	
 	if (shop && "disableHRP" in shop) {
-		//shop.disableHRP();
+		shop.disableHRP();
 	}
 	// The method called here is showCheckRegistered in index.jsp, not in oss.js
 	showCheckRegistered();
